@@ -41,8 +41,7 @@ INSTALLED_APPS = [
     # local apps
     'main_app',
     'finance',
-    'user',
-    'user_app',
+    'userapp',
 ]
 
 MIDDLEWARE = [
@@ -111,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tashkent'
 
 USE_I18N = True
 
