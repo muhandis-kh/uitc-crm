@@ -65,6 +65,30 @@
         "documentation": {}
     },
     {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -73,38 +97,6 @@
         "documentation": {}
     },
     {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
         "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
@@ -130,14 +122,6 @@
     },
     {
         "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -185,84 +169,11 @@
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
         "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
-        "isExtraImport": true,
-        "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
-        "isExtraImport": true,
-        "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
-        "isExtraImport": true,
-        "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
-        "label": "autoslug.fields",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "autoslug.fields",
-        "description": "autoslug.fields",
-        "detail": "autoslug.fields",
         "documentation": {}
     },
     {
@@ -275,20 +186,36 @@
         "documentation": {}
     },
     {
-        "label": "main_app.models",
+        "label": "autoslug.fields",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "main_app.models",
-        "description": "main_app.models",
-        "detail": "main_app.models",
+        "importPath": "autoslug.fields",
+        "description": "autoslug.fields",
+        "detail": "autoslug.fields",
         "documentation": {}
     },
     {
-        "label": "Field",
-        "importPath": "main_app.models",
-        "description": "main_app.models",
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
         "isExtraImport": true,
-        "detail": "main_app.models",
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
         "documentation": {}
     },
     {
@@ -297,6 +224,207 @@
         "description": "autoslug",
         "isExtraImport": true,
         "detail": "autoslug",
+        "documentation": {}
+    },
+    {
+        "label": "AutoSlugField",
+        "importPath": "autoslug",
+        "description": "autoslug",
+        "isExtraImport": true,
+        "detail": "autoslug",
+        "documentation": {}
+    },
+    {
+        "label": "AutoSlugField",
+        "importPath": "autoslug",
+        "description": "autoslug",
+        "isExtraImport": true,
+        "detail": "autoslug",
+        "documentation": {}
+    },
+    {
+        "label": "Student",
+        "importPath": "userapp.models",
+        "description": "userapp.models",
+        "isExtraImport": true,
+        "detail": "userapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Worker",
+        "importPath": "userapp.models",
+        "description": "userapp.models",
+        "isExtraImport": true,
+        "detail": "userapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Student",
+        "importPath": "userapp.models",
+        "description": "userapp.models",
+        "isExtraImport": true,
+        "detail": "userapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "userapp.models",
+        "description": "userapp.models",
+        "isExtraImport": true,
+        "detail": "userapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "DAYS",
+        "importPath": "userapp.models",
+        "description": "userapp.models",
+        "isExtraImport": true,
+        "detail": "userapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "TIME",
+        "importPath": "userapp.models",
+        "description": "userapp.models",
+        "isExtraImport": true,
+        "detail": "userapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "mainapp.models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mainapp.models",
+        "description": "mainapp.models",
+        "detail": "mainapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Branch",
+        "importPath": "mainapp.models",
+        "description": "mainapp.models",
+        "isExtraImport": true,
+        "detail": "mainapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Group",
+        "importPath": "mainapp.models",
+        "description": "mainapp.models",
+        "isExtraImport": true,
+        "detail": "mainapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "routers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "pprint",
+        "importPath": "pprint",
+        "description": "pprint",
+        "isExtraImport": true,
+        "detail": "pprint",
+        "documentation": {}
+    },
+    {
+        "label": "AllowAny",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
         "documentation": {}
     },
     {
@@ -339,7 +467,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-7+c=tj*&f261h6t+3*aq*xkls%=@ao-*42va6tzx@dwvg1^(!d'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = \"django-insecure-0$ap^wbn5w(rb-tcmz^@dc$p%se6mdxg+b659(0oijp#^!i9u4\"\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -348,7 +476,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-7+c=tj*&f261h6t+3*aq*xkls%=@ao-*42va6tzx@dwvg1^(!d'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "peekOfCode": "SECRET_KEY = \"django-insecure-0$ap^wbn5w(rb-tcmz^@dc$p%se6mdxg+b659(0oijp#^!i9u4\"\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -357,7 +485,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -366,7 +494,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    # local apps",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n    # global apps",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -375,7 +503,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    # local apps\n    'main_app',\n    'finance',",
+        "peekOfCode": "INSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n    # global apps\n    'rest_framework',\n    # local apps",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -384,7 +512,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'config.urls'",
+        "peekOfCode": "MIDDLEWARE = [\n    \"django.middleware.security.SecurityMiddleware\",\n    \"django.contrib.sessions.middleware.SessionMiddleware\",\n    \"django.middleware.common.CommonMiddleware\",\n    \"django.middleware.csrf.CsrfViewMiddleware\",\n    \"django.contrib.auth.middleware.AuthenticationMiddleware\",\n    \"django.contrib.messages.middleware.MessageMiddleware\",\n    \"django.middleware.clickjacking.XFrameOptionsMiddleware\",\n]\nROOT_URLCONF = \"config.urls\"",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -393,7 +521,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "ROOT_URLCONF = 'config.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "peekOfCode": "ROOT_URLCONF = \"config.urls\"\nTEMPLATES = [\n    {\n        \"BACKEND\": \"django.template.backends.django.DjangoTemplates\",\n        \"DIRS\": [],\n        \"APP_DIRS\": True,\n        \"OPTIONS\": {\n            \"context_processors\": [\n                \"django.template.context_processors.debug\",\n                \"django.template.context_processors.request\",",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -402,7 +530,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "peekOfCode": "TEMPLATES = [\n    {\n        \"BACKEND\": \"django.template.backends.django.DjangoTemplates\",\n        \"DIRS\": [],\n        \"APP_DIRS\": True,\n        \"OPTIONS\": {\n            \"context_processors\": [\n                \"django.template.context_processors.debug\",\n                \"django.template.context_processors.request\",\n                \"django.contrib.auth.context_processors.auth\",",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -411,7 +539,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'config.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "peekOfCode": "WSGI_APPLICATION = \"config.wsgi.application\"\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.sqlite3\",\n        \"NAME\": BASE_DIR / \"db.sqlite3\",\n    }\n}\n# Password validation",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -420,7 +548,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "peekOfCode": "DATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.sqlite3\",\n        \"NAME\": BASE_DIR / \"db.sqlite3\",\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -429,7 +557,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.UserAttributeSimilarityValidator\",\n    },\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.MinimumLengthValidator\",\n    },\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.CommonPasswordValidator\",\n    },",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -438,7 +566,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'Asia/Tashkent'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "LANGUAGE_CODE = \"en-us\"\nTIME_ZONE = \"Asia/Tashkent\"\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -447,7 +575,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "TIME_ZONE = 'Asia/Tashkent'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "TIME_ZONE = \"Asia/Tashkent\"\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\n\"\"\" Rest framework settings \"\"\"",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -456,7 +584,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\n\"\"\" Rest framework settings \"\"\"\nREST_FRAMEWORK = {",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -465,7 +593,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\n\"\"\" Rest framework settings \"\"\"\nREST_FRAMEWORK = {\n    # Use Django's standard `django.contrib.auth` permissions,",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -474,7 +602,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\n\"\"\" Rest framework settings \"\"\"\nREST_FRAMEWORK = {\n    # Use Django's standard `django.contrib.auth` permissions,\n    # or allow read-only access for unauthenticated users.\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.AllowAny'",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -483,7 +611,16 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\n\"\"\" Rest framework settings \"\"\"\nREST_FRAMEWORK = {\n    # Use Django's standard `django.contrib.auth` permissions,\n    # or allow read-only access for unauthenticated users.\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.AllowAny'\n    ]\n}",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "REST_FRAMEWORK = {\n    # Use Django's standard `django.contrib.auth` permissions,\n    # or allow read-only access for unauthenticated users.\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.AllowAny'\n    ]\n}",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -492,7 +629,7 @@
         "kind": 5,
         "importPath": "config.urls",
         "description": "config.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n]",
+        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path('api-auth/', include('rest_framework.urls')),\n    path('mainapp/', include('mainapp.urls')),\n]",
         "detail": "config.urls",
         "documentation": {}
     },
@@ -506,120 +643,246 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "finance.migrations.0001_initial",
+        "description": "finance.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        (\"mainapp\", \"0001_initial\"),\n        (\"userapp\", \"0001_initial\"),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name=\"Area\",\n            fields=[",
+        "detail": "finance.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "finance.migrations.0002_area_slug_expenses_slug_income_slug",
+        "description": "finance.migrations.0002_area_slug_expenses_slug_income_slug",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        (\"finance\", \"0001_initial\"),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name=\"area\",\n            name=\"slug\",\n            field=autoslug.fields.AutoSlugField(\n                default=1, editable=False, populate_from=\"name\", unique=True",
+        "detail": "finance.migrations.0002_area_slug_expenses_slug_income_slug",
+        "documentation": {}
+    },
+    {
+        "label": "ExpensesAdmin",
+        "kind": 6,
+        "importPath": "finance.admin",
+        "description": "finance.admin",
+        "peekOfCode": "class ExpensesAdmin(admin.ModelAdmin):\n    list_display = ('name', 'amount', 'branch', 'created_at')\n    list_filter = ('branch', 'created_at')\n@admin.register(Payment)\nclass PaymentAdmin(admin.ModelAdmin):\n    list_display = ('branch', 'group', 'student', 'month', 'amount')\n    list_filter = ('branch', 'group', 'month', 'created_at')\n@admin.register(Area)\nclass AreaAdmin(admin.ModelAdmin):\n    list_display = ('name', 'status', 'created_at')",
+        "detail": "finance.admin",
+        "documentation": {}
+    },
+    {
+        "label": "PaymentAdmin",
+        "kind": 6,
+        "importPath": "finance.admin",
+        "description": "finance.admin",
+        "peekOfCode": "class PaymentAdmin(admin.ModelAdmin):\n    list_display = ('branch', 'group', 'student', 'month', 'amount')\n    list_filter = ('branch', 'group', 'month', 'created_at')\n@admin.register(Area)\nclass AreaAdmin(admin.ModelAdmin):\n    list_display = ('name', 'status', 'created_at')\n    list_filter = ('status', 'created_at')\n@admin.register(Income)\nclass IncomeAdmin(admin.ModelAdmin):\n    list_display = ('name', 'branch', 'area', 'amount', 'created_at')",
+        "detail": "finance.admin",
+        "documentation": {}
+    },
+    {
+        "label": "AreaAdmin",
+        "kind": 6,
+        "importPath": "finance.admin",
+        "description": "finance.admin",
+        "peekOfCode": "class AreaAdmin(admin.ModelAdmin):\n    list_display = ('name', 'status', 'created_at')\n    list_filter = ('status', 'created_at')\n@admin.register(Income)\nclass IncomeAdmin(admin.ModelAdmin):\n    list_display = ('name', 'branch', 'area', 'amount', 'created_at')\n    list_filter = ('branch', 'area', 'created_at')",
+        "detail": "finance.admin",
+        "documentation": {}
+    },
+    {
+        "label": "IncomeAdmin",
+        "kind": 6,
+        "importPath": "finance.admin",
+        "description": "finance.admin",
+        "peekOfCode": "class IncomeAdmin(admin.ModelAdmin):\n    list_display = ('name', 'branch', 'area', 'amount', 'created_at')\n    list_filter = ('branch', 'area', 'created_at')",
+        "detail": "finance.admin",
+        "documentation": {}
+    },
+    {
         "label": "FinanceConfig",
         "kind": 6,
         "importPath": "finance.apps",
         "description": "finance.apps",
-        "peekOfCode": "class FinanceConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'finance'",
+        "peekOfCode": "class FinanceConfig(AppConfig):\n    default_auto_field = \"django.db.models.BigAutoField\"\n    name = \"finance\"",
         "detail": "finance.apps",
         "documentation": {}
     },
     {
-        "label": "Migration",
+        "label": "Expenses",
         "kind": 6,
-        "importPath": "main_app.migrations.0001_initial",
-        "description": "main_app.migrations.0001_initial",
-        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Branch',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=100, unique=True, verbose_name='Nomi')),",
-        "detail": "main_app.migrations.0001_initial",
+        "importPath": "finance.models",
+        "description": "finance.models",
+        "peekOfCode": "class Expenses(models.Model):\n    \"\"\" Harajatlar modeli \"\"\"\n    name = models.CharField(max_length=250, verbose_name=\"Harajat nomi\")\n    slug  = AutoSlugField(populate_from=\"name\", unique=True)\n    amount = models.DecimalField(max_digits=10, decimal_places=2, verbose_name=\"Miqdori\")\n    comment = models.TextField(verbose_name=\"Izoh\")\n    branch = models.ForeignKey(Branch, on_delete=models.CASCADE, related_name=\"expenses\", verbose_name=\"Filial\")\n    status = models.BooleanField(default=True, verbose_name=\"Holati\")\n    created_at = models.DateTimeField(auto_now_add=True)\n    class Meta:",
+        "detail": "finance.models",
+        "documentation": {}
+    },
+    {
+        "label": "Payment",
+        "kind": 6,
+        "importPath": "finance.models",
+        "description": "finance.models",
+        "peekOfCode": "class Payment(models.Model):\n    \"\"\" O'quvchining to'lov qilishi un model \"\"\"\n    branch = models.ForeignKey(Branch, on_delete=models.CASCADE, related_name='payments', verbose_name=\"Filial\")\n    group = models.ForeignKey(Group, on_delete=models.CASCADE, related_name=\"payments\", verbose_name=\"gruhi\")\n    student = models.ForeignKey(Student, on_delete=models.CASCADE, related_name=\"payments\", verbose_name=\"O'quvchi\")\n    month = models.CharField(max_length=25, choices=MONTH_NAME, verbose_name=\"Oylar\")\n    amount = models.DecimalField(max_digits=10, decimal_places=2, verbose_name=\"Miqdori\")\n    status = models.BooleanField(default=True, verbose_name=\"Holati\")\n    created_at = models.DateTimeField(auto_now_add=True)\n    class Meta:",
+        "detail": "finance.models",
+        "documentation": {}
+    },
+    {
+        "label": "Area",
+        "kind": 6,
+        "importPath": "finance.models",
+        "description": "finance.models",
+        "peekOfCode": "class Area(models.Model):\n    \"\"\" Kompaniyaning xizmat ko'rsatish turlari uchun model \"\"\"\n    name  = models.CharField(max_length=250, verbose_name=\"Nomi\")\n    slug  = AutoSlugField(populate_from=\"name\", unique=True)\n    status = models.BooleanField(default=True, verbose_name=\"Holati\")\n    created_at = models.DateTimeField(auto_now_add=True)\n    class Meta:\n        verbose_name = \"Hizmat\"\n        verbose_name_plural = \"Hizmatlar\"\n        ordering = ('-created_at',)",
+        "detail": "finance.models",
+        "documentation": {}
+    },
+    {
+        "label": "Income",
+        "kind": 6,
+        "importPath": "finance.models",
+        "description": "finance.models",
+        "peekOfCode": "class Income(models.Model): \n    \"\"\" Daromadlar uchun model \"\"\"\n    name  = models.CharField(max_length=250, verbose_name=\"Nomi\")\n    slug  = AutoSlugField(populate_from=\"name\", unique=True)\n    branch = models.ForeignKey(Branch, on_delete=models.CASCADE, related_name='incoms', verbose_name=\"Filial\")\n    area = models.ForeignKey(Area, on_delete=models.CASCADE, related_name='incoms', verbose_name=\"Xizmat turi\")\n    amount = models.DecimalField(max_digits=10, decimal_places=2, verbose_name=\"Miqdori\")\n    comment = models.TextField(verbose_name=\"Izoh\")\n    status = models.BooleanField(default=True, verbose_name=\"Holati\")\n    created_at = models.DateTimeField(auto_now_add=True)",
+        "detail": "finance.models",
+        "documentation": {}
+    },
+    {
+        "label": "MONTH_NAME",
+        "kind": 5,
+        "importPath": "finance.models",
+        "description": "finance.models",
+        "peekOfCode": "MONTH_NAME = (\n        ('yan', \"Yanvar\"),\n        ('fev', \"Fevral\"),\n        ('mar', \"Mart\"),\n        ('apr', \"Aprel\"),\n        ('may', \"May\"),\n        ('iyn', \"Iyun\"),\n        ('iyl', \"Iyul\"),\n        ('avg', \"Avgust\"),\n        ('sen', \"Sen\"),",
+        "detail": "finance.models",
         "documentation": {}
     },
     {
         "label": "Migration",
         "kind": 6,
-        "importPath": "main_app.migrations.0002_alter_field_cost",
-        "description": "main_app.migrations.0002_alter_field_cost",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('main_app', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='field',\n            name='cost',\n            field=models.DecimalField(blank=True, decimal_places=2, default=100000, max_digits=8, null=True, verbose_name='Kurs narxi'),\n        ),",
-        "detail": "main_app.migrations.0002_alter_field_cost",
+        "importPath": "mainapp.migrations.0001_initial",
+        "description": "mainapp.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        (\"userapp\", \"__first__\"),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name=\"Branch\",\n            fields=[\n                (",
+        "detail": "mainapp.migrations.0001_initial",
         "documentation": {}
     },
     {
-        "label": "Migration",
+        "label": "BranchAdmin",
         "kind": 6,
-        "importPath": "main_app.migrations.0003_alter_branch_slug_alter_field_slug_alter_room_slug",
-        "description": "main_app.migrations.0003_alter_branch_slug_alter_field_slug_alter_room_slug",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('main_app', '0002_alter_field_cost'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='branch',\n            name='slug',\n            field=autoslug.fields.AutoSlugField(editable=False, populate_from='name', unique=True),\n        ),",
-        "detail": "main_app.migrations.0003_alter_branch_slug_alter_field_slug_alter_room_slug",
+        "importPath": "mainapp.admin",
+        "description": "mainapp.admin",
+        "peekOfCode": "class BranchAdmin(admin.ModelAdmin):\n    list_display = (\"name\", 'id', \"adress\", \"status\", \"created_at\",)\n    list_filter = (\"status\", \"created_at\")\n    list_editable = (\"status\",)\n@admin.register(Room)\nclass RoomAdmin(admin.ModelAdmin):\n    list_display = (\"number\", 'id', 'slug', 'branch', \"capacity\", \"status\", \"created_at\")\n    list_filter = (\"branch\", 'capacity', 'status', 'created_at')\n    list_editable = (\"status\",\"capacity\")\n@admin.register(Group)",
+        "detail": "mainapp.admin",
         "documentation": {}
     },
     {
-        "label": "Migration",
+        "label": "RoomAdmin",
         "kind": 6,
-        "importPath": "main_app.migrations.0004_alter_room_branch",
-        "description": "main_app.migrations.0004_alter_room_branch",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('main_app', '0003_alter_branch_slug_alter_field_slug_alter_room_slug'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='room',\n            name='branch',\n            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='rooms', to='main_app.branch', verbose_name='Filial'),\n        ),",
-        "detail": "main_app.migrations.0004_alter_room_branch",
+        "importPath": "mainapp.admin",
+        "description": "mainapp.admin",
+        "peekOfCode": "class RoomAdmin(admin.ModelAdmin):\n    list_display = (\"number\", 'id', 'slug', 'branch', \"capacity\", \"status\", \"created_at\")\n    list_filter = (\"branch\", 'capacity', 'status', 'created_at')\n    list_editable = (\"status\",\"capacity\")\n@admin.register(Group)\nclass GroupAdmin(admin.ModelAdmin):\n    list_display = ('name', 'id', 'branch', 'field', 'teacher', 'day', 'time', 'status')\n    list_filter  = ('branch', 'field', 'teacher', 'day','time', 'status', 'created_at')\n    list_editable = ('status', 'day', 'time')",
+        "detail": "mainapp.admin",
+        "documentation": {}
+    },
+    {
+        "label": "GroupAdmin",
+        "kind": 6,
+        "importPath": "mainapp.admin",
+        "description": "mainapp.admin",
+        "peekOfCode": "class GroupAdmin(admin.ModelAdmin):\n    list_display = ('name', 'id', 'branch', 'field', 'teacher', 'day', 'time', 'status')\n    list_filter  = ('branch', 'field', 'teacher', 'day','time', 'status', 'created_at')\n    list_editable = ('status', 'day', 'time')",
+        "detail": "mainapp.admin",
+        "documentation": {}
+    },
+    {
+        "label": "MainappConfig",
+        "kind": 6,
+        "importPath": "mainapp.apps",
+        "description": "mainapp.apps",
+        "peekOfCode": "class MainappConfig(AppConfig):\n    default_auto_field = \"django.db.models.BigAutoField\"\n    name = \"mainapp\"",
+        "detail": "mainapp.apps",
         "documentation": {}
     },
     {
         "label": "Branch",
         "kind": 6,
-        "importPath": "main_app.admin",
-        "description": "main_app.admin",
-        "peekOfCode": "class Branch(admin.ModelAdmin):\n    list_display = (\"name\", 'id', 'address', 'slug', 'status', 'created_at',)\n    list_filter = ('status', 'created_at',)\n    list_editable = ('status',)\n@admin.register(Field)\nclass Field(admin.ModelAdmin):\n    list_display = ('name', 'id', 'cost', 'duration', 'slug', 'status', 'created_at')\n    list_filter = ('status', 'created_at', 'duration')\n    list_editable = ('status',)\n@admin.register(Room)",
-        "detail": "main_app.admin",
-        "documentation": {}
-    },
-    {
-        "label": "Field",
-        "kind": 6,
-        "importPath": "main_app.admin",
-        "description": "main_app.admin",
-        "peekOfCode": "class Field(admin.ModelAdmin):\n    list_display = ('name', 'id', 'cost', 'duration', 'slug', 'status', 'created_at')\n    list_filter = ('status', 'created_at', 'duration')\n    list_editable = ('status',)\n@admin.register(Room)\nclass Room(admin.ModelAdmin):\n    list_display = ('number', 'id', 'branch', 'capacity', 'slug', 'status', 'created_at')\n    list_filter = ('branch', 'capacity', 'status', 'created_at')\n    list_editable = ('status',)",
-        "detail": "main_app.admin",
+        "importPath": "mainapp.models",
+        "description": "mainapp.models",
+        "peekOfCode": "class Branch(models.Model):\n    \"\"\" Branch - ushbu model Filiallar uchun yaratilgan.\"\"\"\n    name  = models.CharField(max_length=100, unique=True, verbose_name=\"Nomi\")\n    slug  = AutoSlugField(populate_from=\"name\", unique=True)\n    adress = models.CharField(max_length=250, verbose_name=\"Manzil\")\n    status = models.BooleanField(default=True, verbose_name=\"Holati\")\n    created_at = models.DateTimeField(auto_now_add=True)\n    class Meta:\n        verbose_name = \"Filial\"\n        verbose_name_plural = \"Filiallar\"",
+        "detail": "mainapp.models",
         "documentation": {}
     },
     {
         "label": "Room",
         "kind": 6,
-        "importPath": "main_app.admin",
-        "description": "main_app.admin",
-        "peekOfCode": "class Room(admin.ModelAdmin):\n    list_display = ('number', 'id', 'branch', 'capacity', 'slug', 'status', 'created_at')\n    list_filter = ('branch', 'capacity', 'status', 'created_at')\n    list_editable = ('status',)",
-        "detail": "main_app.admin",
+        "importPath": "mainapp.models",
+        "description": "mainapp.models",
+        "peekOfCode": "class Room(models.Model):\n    \"\"\" Room - Har bir Filialdagi xonalar uchun madel \"\"\"\n    number = models.PositiveIntegerField(verbose_name=\"Raqami\", default=1)\n    branch = models.ForeignKey(Branch, on_delete=models.CASCADE, verbose_name=\"Filial\", related_name=\"rooms\")\n    # slug  = AutoSlugField(populate_from=\"number-branch\", unique=True)\n    slug = AutoSlugField(\n        (u'slug'),\n        populate_from=slugify_two_fields,\n        unique=True\n    )",
+        "detail": "mainapp.models",
         "documentation": {}
     },
     {
-        "label": "MainAppConfig",
+        "label": "Group",
         "kind": 6,
-        "importPath": "main_app.apps",
-        "description": "main_app.apps",
-        "peekOfCode": "class MainAppConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'main_app'",
-        "detail": "main_app.apps",
-        "documentation": {}
-    },
-    {
-        "label": "Branch",
-        "kind": 6,
-        "importPath": "main_app.models",
-        "description": "main_app.models",
-        "peekOfCode": "class Branch(models.Model):\n    \"\"\" Branch - ushbu model filiallar uchun yaratilgan va loyihani \"\"\"\n    name = models.CharField(max_length=100, unique=True, verbose_name=\"Nomi\")\n    slug = AutoSlugField(populate_from='name', unique=True)\n    address = models.CharField(max_length=250, verbose_name=\"Manzil\")\n    status = models.BooleanField(default=True, verbose_name=\"Holati\")\n    created_at = models.DateTimeField(auto_now_add=True)\n    class Meta:\n        verbose_name = \"Branch\"\n        verbose_name_plural = \"Filiallar\"",
-        "detail": "main_app.models",
-        "documentation": {}
-    },
-    {
-        "label": "Field",
-        "kind": 6,
-        "importPath": "main_app.models",
-        "description": "main_app.models",
-        "peekOfCode": "class Field(models.Model):\n    \"\"\" Fields modeli = o'quv markazdagi yo'nalishlarni aniqlash uchun yaratilgan\"\"\"\n    name = models.CharField(max_length=100, unique=True, verbose_name=\"Nomi\")\n    slug = AutoSlugField(populate_from='name', unique=True)\n    cost = models.DecimalField(max_digits=8, decimal_places=2, default=100000, blank=True, null=True, verbose_name=\"Kurs narxi\")\n    duration = models.PositiveIntegerField(default=1, verbose_name=\"Kurs davomiyligi\")\n    status = models.BooleanField(default=True, verbose_name=\"Holati\")\n    created_at = models.DateTimeField(auto_now_add=True)\n    class Meta:\n        verbose_name = \"Kurs\"",
-        "detail": "main_app.models",
-        "documentation": {}
-    },
-    {
-        "label": "Room",
-        "kind": 6,
-        "importPath": "main_app.models",
-        "description": "main_app.models",
-        "peekOfCode": "class Room(models.Model):\n    \"\"\" Room modeli = o'quv markazdagi xonalar uchun yaratilgan\"\"\"\n    number = models.PositiveIntegerField(verbose_name=\"Xona raqami\", default=1)\n    # slug = AutoSlugField(populate_name=number, unique=True)\n    slug = AutoSlugField(\n        (u'slug'),\n        populate_from=slugify_two_fields, unique=True\n    )\n    branch = models.ForeignKey(Branch, on_delete=models.CASCADE, verbose_name=\"Filial\", related_name='rooms')\n    capacity = models.PositiveIntegerField(default=8, verbose_name=\"Xona sig'imi\")",
-        "detail": "main_app.models",
+        "importPath": "mainapp.models",
+        "description": "mainapp.models",
+        "peekOfCode": "class Group(models.Model):\n    field = models.ForeignKey(Field, on_delete=models.CASCADE, \n                              related_name='groups', verbose_name=\"Kurs\")\n    name = models.CharField(max_length=50, verbose_name=\"Nominal\")\n    slug  = AutoSlugField(populate_from=\"name\", unique=True)\n    teacher = models.ForeignKey(Worker, on_delete=models.CASCADE, related_name='groups', \n                                verbose_name=\"O'qtuvchi\")\n    students = models.ManyToManyField(Student, related_name=\"students\", \n                                      verbose_name=\"O'quvchilar\")\n    day = models.CharField(max_length=25, choices=DAYS, default='toq')",
+        "detail": "mainapp.models",
         "documentation": {}
     },
     {
         "label": "slugify_two_fields",
         "kind": 2,
-        "importPath": "main_app.models",
-        "description": "main_app.models",
-        "peekOfCode": "def slugify_two_fields(self):\n        return \"{}-{}\".format(self.branch.name, self.number)\nclass Room(models.Model):\n    \"\"\" Room modeli = o'quv markazdagi xonalar uchun yaratilgan\"\"\"\n    number = models.PositiveIntegerField(verbose_name=\"Xona raqami\", default=1)\n    # slug = AutoSlugField(populate_name=number, unique=True)\n    slug = AutoSlugField(\n        (u'slug'),\n        populate_from=slugify_two_fields, unique=True\n    )",
-        "detail": "main_app.models",
+        "importPath": "mainapp.models",
+        "description": "mainapp.models",
+        "peekOfCode": "def slugify_two_fields(self):\n        \"\"\" Ikkita maydonni sludada birlashtirish \"\"\"\n        return \"{}-{}\".format(self.branch.name, self.number)\nclass Room(models.Model):\n    \"\"\" Room - Har bir Filialdagi xonalar uchun madel \"\"\"\n    number = models.PositiveIntegerField(verbose_name=\"Raqami\", default=1)\n    branch = models.ForeignKey(Branch, on_delete=models.CASCADE, verbose_name=\"Filial\", related_name=\"rooms\")\n    # slug  = AutoSlugField(populate_from=\"number-branch\", unique=True)\n    slug = AutoSlugField(\n        (u'slug'),",
+        "detail": "mainapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "BranchSerializer",
+        "kind": 6,
+        "importPath": "mainapp.serializers",
+        "description": "mainapp.serializers",
+        "peekOfCode": "class BranchSerializer(serializers.ModelSerializer):\n    class Meta:\n        model  = Branch\n        fields = ('__all__')\nclass RoomSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Room\n        fields = ('__all__')\nclass GroupSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "mainapp.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "RoomSerializer",
+        "kind": 6,
+        "importPath": "mainapp.serializers",
+        "description": "mainapp.serializers",
+        "peekOfCode": "class RoomSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Room\n        fields = ('__all__')\nclass GroupSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Group\n        fields  =('__all__')",
+        "detail": "mainapp.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "GroupSerializer",
+        "kind": 6,
+        "importPath": "mainapp.serializers",
+        "description": "mainapp.serializers",
+        "peekOfCode": "class GroupSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Group\n        fields  =('__all__')",
+        "detail": "mainapp.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "mainapp.urls",
+        "description": "mainapp.urls",
+        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register(r'branch', BranchViewset, 'branch')\nurlpatterns = [\n    path('', include(router.urls)),\n]",
+        "detail": "mainapp.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "mainapp.urls",
+        "description": "mainapp.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', include(router.urls)),\n]",
+        "detail": "mainapp.urls",
+        "documentation": {}
+    },
+    {
+        "label": "BranchViewset",
+        "kind": 6,
+        "importPath": "mainapp.views",
+        "description": "mainapp.views",
+        "peekOfCode": "class BranchViewset(viewsets.ModelViewSet):\n    queryset = Branch.objects.all()\n    serializer_class = BranchSerializer\n    permission_classes = [AllowAny]\n    \"\"\" CRUD functions \"\"\"\n    def create(self, request, *args, **kwargs):\n        try:\n            data = request.data\n        except:\n            return Response({'error':\"Ma'lumotni olishda xatolik yuzaga keldi !!!\"})",
+        "detail": "mainapp.views",
         "documentation": {}
     },
     {
@@ -627,17 +890,17 @@
         "kind": 6,
         "importPath": "userapp.migrations.0001_initial",
         "description": "userapp.migrations.0001_initial",
-        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('main_app', '0004_alter_room_branch'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Role',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = []\n    operations = [\n        migrations.CreateModel(\n            name=\"Field\",\n            fields=[\n                (\n                    \"id\",\n                    models.BigAutoField(",
         "detail": "userapp.migrations.0001_initial",
         "documentation": {}
     },
     {
-        "label": "Migration",
+        "label": "FieldAdmin",
         "kind": 6,
-        "importPath": "userapp.migrations.0002_alter_student_options_worker_direction_and_more",
-        "description": "userapp.migrations.0002_alter_student_options_worker_direction_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('main_app', '0004_alter_room_branch'),\n        ('userapp', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterModelOptions(\n            name='student',\n            options={'ordering': ('-created_at',), 'verbose_name': \"O'quvchi\", 'verbose_name_plural': \"O'quvchilar\"},\n        ),",
-        "detail": "userapp.migrations.0002_alter_student_options_worker_direction_and_more",
+        "importPath": "userapp.admin",
+        "description": "userapp.admin",
+        "peekOfCode": "class FieldAdmin(admin.ModelAdmin):\n    list_display = (\"name\", 'id', \"cost\", \"duration\", \"status\", \"created_at\")\n    list_filter = (\"duration\", \"status\", \"created_at\")\n    list_editable = (\"status\",)\n@admin.register(Role)\nclass Role(admin.ModelAdmin):\n    list_display = ('name', 'status',)\n    list_editable = ('status',)\n@admin.register(Worker)\nclass Worker(admin.ModelAdmin):",
+        "detail": "userapp.admin",
         "documentation": {}
     },
     {
@@ -654,7 +917,7 @@
         "kind": 6,
         "importPath": "userapp.admin",
         "description": "userapp.admin",
-        "peekOfCode": "class Worker(admin.ModelAdmin):\n    list_display = ('full_name', 'role', 'status',)\n    list_filter = ('status', 'role',)\n    list_editable = ('status', 'role',)\n@admin.register(Student)\nclass Student(admin.ModelAdmin):\n    list_display = ('full_name', 'field', 'day', 'time', 'status',)\n    list_filter = ('status', 'field', 'day', 'time',)\n    list_editable = ('status', 'field', 'day', 'time',)",
+        "peekOfCode": "class Worker(admin.ModelAdmin):\n    list_display = ('full_name', 'role', 'status',)\n    list_filter = ('status', 'role',)\n    list_editable = ('status', 'role',)\n@admin.register(Student)\nclass Student(admin.ModelAdmin):\n    list_display = ('full_name', 'field', 'day', 'time', 'status',)\n    list_filter = ('status', 'field', 'day', 'time',)\n    list_editable = ('status',)",
         "detail": "userapp.admin",
         "documentation": {}
     },
@@ -663,7 +926,7 @@
         "kind": 6,
         "importPath": "userapp.admin",
         "description": "userapp.admin",
-        "peekOfCode": "class Student(admin.ModelAdmin):\n    list_display = ('full_name', 'field', 'day', 'time', 'status',)\n    list_filter = ('status', 'field', 'day', 'time',)\n    list_editable = ('status', 'field', 'day', 'time',)",
+        "peekOfCode": "class Student(admin.ModelAdmin):\n    list_display = ('full_name', 'field', 'day', 'time', 'status',)\n    list_filter = ('status', 'field', 'day', 'time',)\n    list_editable = ('status',)",
         "detail": "userapp.admin",
         "documentation": {}
     },
@@ -672,8 +935,17 @@
         "kind": 6,
         "importPath": "userapp.apps",
         "description": "userapp.apps",
-        "peekOfCode": "class UserappConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'userapp'",
+        "peekOfCode": "class UserappConfig(AppConfig):\n    default_auto_field = \"django.db.models.BigAutoField\"\n    name = \"userapp\"",
         "detail": "userapp.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "kind": 6,
+        "importPath": "userapp.models",
+        "description": "userapp.models",
+        "peekOfCode": "class Field(models.Model):\n    \"\"\" Field modeli - o'quv markazdagi yo'nalish(kurs)larni aniqlsh uchun yaratilgan. M: Backend, Frontend, 3D, ...\"\"\"\n    name  = models.CharField(max_length=100, unique=True, verbose_name=\"Nomi\")\n    slug  = AutoSlugField(populate_from=\"name\", unique=True)\n    cost = models.DecimalField(max_digits=8, decimal_places=2, default=100000, blank=True, null=True, verbose_name=\"Narxi\")\n    duration = models.PositiveIntegerField(default=6, verbose_name=\"Kurs davomiyligi\")\n    status = models.BooleanField(default=True, verbose_name=\"Holati\")\n    created_at = models.DateTimeField(auto_now_add=True)\n    class Meta:\n        verbose_name = \"Kurs\"",
+        "detail": "userapp.models",
         "documentation": {}
     },
     {
@@ -681,7 +953,7 @@
         "kind": 6,
         "importPath": "userapp.models",
         "description": "userapp.models",
-        "peekOfCode": "class Role(models.Model):\n    \"\"\" Xodimlarning vazifasini yaratuvchi model \"\"\"\n    name = models.CharField(max_length=250, verbose_name=\"Vazifasi\")\n    status = models.BooleanField(default=True, verbose_name=\"Holati\")\n    created_at = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return self.name\nclass Worker(models.Model):\n    \"\"\" Xodimlar yaratish uchun model \"\"\"\n    full_name = models.CharField(max_length=255, verbose_name=\"Ism Familiyasi\")",
+        "peekOfCode": "class Role(models.Model):\n    \"\"\" Role - xodimlarning vazifasini yaratuvchi model \"\"\"\n    name = models.CharField(max_length=50, verbose_name=\"Vazifasi nomi\")\n    slug  = AutoSlugField(populate_from=\"name\", unique=True)\n    status = models.BooleanField(default=True, verbose_name=\"Holati\")\n    created_at = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return self.name\nclass Worker(models.Model):\n    \"\"\" Worker - xodimlar uchun model \"\"\"",
         "detail": "userapp.models",
         "documentation": {}
     },
@@ -690,7 +962,7 @@
         "kind": 6,
         "importPath": "userapp.models",
         "description": "userapp.models",
-        "peekOfCode": "class Worker(models.Model):\n    \"\"\" Xodimlar yaratish uchun model \"\"\"\n    full_name = models.CharField(max_length=255, verbose_name=\"Ism Familiyasi\")\n    role = models.ForeignKey(Role, on_delete=models.CASCADE, verbose_name=\"Vazifasi\", related_name=\"workers\")\n    phone_number = models.CharField(max_length=18, validators=[_validate_phone], verbose_name=\"Telefon raqami\", unique=True)\n    passport = models.CharField(max_length=15, verbose_name=\"Passport raqami\", unique=True)\n    direction = models.ForeignKey(Field, on_delete=models.CASCADE, verbose_name=\"O'qituvchi yo'nalishi\", related_name='workers')\n    percentage = models.PositiveIntegerField(verbose_name=\"O'qituvchi foizi\", blank=True, null=True)\n    salary = models.DecimalField(max_digits=10, decimal_places=2, verbose_name=\"Maosh\", blank=True, null=True)\n    status = models.BooleanField(default=True, verbose_name=\"Holati\")",
+        "peekOfCode": "class Worker(models.Model):\n    \"\"\" Worker - xodimlar uchun model \"\"\"\n    full_name = models.CharField(max_length=100, verbose_name=\"Ism familya\")\n    slug  = AutoSlugField(populate_from=\"full_name\", unique=True)\n    role = models.ForeignKey(Role, on_delete=models.CASCADE, verbose_name=\"Vazifasi\", related_name=\"workers\")\n    diriction = models.ForeignKey(Field, on_delete=models.CASCADE, verbose_name=\"O'qtuvchining yo'nalishi\", related_name=\"workers\")\n    phone_number = models.CharField(max_length=12, validators=[_validate_phone], verbose_name=\"tel. raqam\", unique=True)\n    passport = models.CharField(max_length=15, verbose_name=\"Passport\", unique=True)\n    # percentage - ishchining maoshi foizga nisbatan hisoblansa\n    percentage = models.PositiveIntegerField(default=10, verbose_name=\"Ishchining foizi\", blank=True, null=True)",
         "detail": "userapp.models",
         "documentation": {}
     },
@@ -699,7 +971,7 @@
         "kind": 6,
         "importPath": "userapp.models",
         "description": "userapp.models",
-        "peekOfCode": "class Student(models.Model):\n    \"\"\" O'quvchi yaratish uchun model \"\"\"\n    full_name = models.CharField(max_length=100, verbose_name=\"Ism va Familyasi\")\n    date_of_birth = models.DateField(verbose_name=\"Tug'ilgan sanasi\")\n    passport = models.CharField(max_length=15, verbose_name=\"Passport raqami\", unique=True)\n    phone_number = models.CharField(max_length=18, validators=[_validate_phone], verbose_name=\"Telefon raqami\", unique=True)\n    parents_name = models.CharField(max_length=100, verbose_name=\"Ota-onasining ismi\")\n    parents_phone_number = models.CharField(max_length=18, validators=[_validate_phone], verbose_name=\"Ota-onasining telefon raqami\", unique=True)\n    field = models.ForeignKey(Field, on_delete=models.CASCADE, verbose_name=\"Yo'nalish\", related_name='students')\n    day = models.CharField(max_length=25, choices=DAYS, default='toq', verbose_name=\"Kurs kunlari\")",
+        "peekOfCode": "class Student(models.Model):\n    \"\"\" O'quvchilar uchun model \"\"\"\n    full_name = models.CharField(max_length=100, verbose_name=\"Ismi\")\n    slug  = AutoSlugField(populate_from=\"full_name\", unique=True)\n    date_of_birth = models.DateField(verbose_name=\"Tug'ilgan sanasi\")\n    passport = models.CharField(max_length=15, verbose_name=\"Passport\", unique=True)\n    phone_number = models.CharField(max_length=12, validators=[_validate_phone], verbose_name=\"tel. raqam\", unique=True)\n    father_name = models.CharField(max_length=100, verbose_name=\"otasining ismi\")\n    father_phone = models.CharField(max_length=12, validators=[_validate_phone], verbose_name=\"tel. raqam\", unique=True)\n    # field - o'qish yo'nalishi ",
         "detail": "userapp.models",
         "documentation": {}
     },
@@ -708,7 +980,7 @@
         "kind": 5,
         "importPath": "userapp.models",
         "description": "userapp.models",
-        "peekOfCode": "_validate_phone = RegexValidator(\n    regex=r\"^[\\+]?[(]?[8-9]{3}[)]?[-\\s\\.]?[0-9]{3}[-\\s\\.]?[0-9]{4,6}$\",\n    message=\"Telefon raqamingiz + yoki 9 bilan boshlanishi va 12 belgidan oshmasligi lozim. Masalan: +998991271405\",\n)\nDAYS = (\n    (\"toq\", \"Du-Chor-Jum\"),\n    (\"juft\", \"Se-Pay-Shan\"),\n    (\"boot\", \"Bootcamp\"),\n) \nTIME = (",
+        "peekOfCode": "_validate_phone = RegexValidator(\n    regex=r\"^[\\+]?[9]{2}[8]?[0-9]{2}?[0-9]{3}?[0-9]{2}?[0-9]{2}$\",\n    message=\"Telefon raqamingiz 9 bilan boshlanishi va 12 belgidan oshmasligi lozim. Masalan: 998334568978\",\n)\nDAYS = (\n    (\"toq\",\"Du-Chor-Ju\"),\n    (\"juft\",\"Se-Pay-Shan\"),\n    (\"boot\",\"Bootcamp\"),\n)\nTIME = (",
         "detail": "userapp.models",
         "documentation": {}
     },
@@ -717,7 +989,7 @@
         "kind": 5,
         "importPath": "userapp.models",
         "description": "userapp.models",
-        "peekOfCode": "DAYS = (\n    (\"toq\", \"Du-Chor-Jum\"),\n    (\"juft\", \"Se-Pay-Shan\"),\n    (\"boot\", \"Bootcamp\"),\n) \nTIME = (\n    ('8', \"8:00-11:00\"),\n    ('12', \"12:00-14:00\"),\n    ('14', \"14:00-17:00\"),\n    ('17', \"17:00-20:00\"),",
+        "peekOfCode": "DAYS = (\n    (\"toq\",\"Du-Chor-Ju\"),\n    (\"juft\",\"Se-Pay-Shan\"),\n    (\"boot\",\"Bootcamp\"),\n)\nTIME = (\n    ('8',\"8:00-11:00\"),\n    ('12',\"12:00-14:00\"),\n    ('14',\"14:00-17:00\"),\n)",
         "detail": "userapp.models",
         "documentation": {}
     },
@@ -726,7 +998,7 @@
         "kind": 5,
         "importPath": "userapp.models",
         "description": "userapp.models",
-        "peekOfCode": "TIME = (\n    ('8', \"8:00-11:00\"),\n    ('12', \"12:00-14:00\"),\n    ('14', \"14:00-17:00\"),\n    ('17', \"17:00-20:00\"),\n) \nclass Role(models.Model):\n    \"\"\" Xodimlarning vazifasini yaratuvchi model \"\"\"\n    name = models.CharField(max_length=250, verbose_name=\"Vazifasi\")\n    status = models.BooleanField(default=True, verbose_name=\"Holati\")",
+        "peekOfCode": "TIME = (\n    ('8',\"8:00-11:00\"),\n    ('12',\"12:00-14:00\"),\n    ('14',\"14:00-17:00\"),\n)\nclass Field(models.Model):\n    \"\"\" Field modeli - o'quv markazdagi yo'nalish(kurs)larni aniqlsh uchun yaratilgan. M: Backend, Frontend, 3D, ...\"\"\"\n    name  = models.CharField(max_length=100, unique=True, verbose_name=\"Nomi\")\n    slug  = AutoSlugField(populate_from=\"name\", unique=True)\n    cost = models.DecimalField(max_digits=8, decimal_places=2, default=100000, blank=True, null=True, verbose_name=\"Narxi\")",
         "detail": "userapp.models",
         "documentation": {}
     },
@@ -735,7 +1007,7 @@
         "kind": 2,
         "importPath": "manage",
         "description": "manage",
-        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault(\"DJANGO_SETTINGS_MODULE\", \"config.settings\")\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
         "detail": "manage",
         "documentation": {}
     }

@@ -1,6 +1,14 @@
 from django.contrib import admin
-from .models import Role, Worker, Student
+from .models import Role, Worker, Student, Field
+
 # Register your models here.
+
+@admin.register(Field)
+class FieldAdmin(admin.ModelAdmin):
+    list_display = ("name", 'id', "cost", "duration", "status", "created_at")
+    list_filter = ("duration", "status", "created_at")
+    list_editable = ("status",)
+
 @admin.register(Role)
 class Role(admin.ModelAdmin):
     list_display = ('name', 'status',)
@@ -16,4 +24,8 @@ class Worker(admin.ModelAdmin):
 class Student(admin.ModelAdmin):
     list_display = ('full_name', 'field', 'day', 'time', 'status',)
     list_filter = ('status', 'field', 'day', 'time',)
-    list_editable = ('status', 'field', 'day', 'time',)
+    list_editable = ('status',)
+
+
+
+    
