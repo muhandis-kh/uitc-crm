@@ -105,6 +105,22 @@
         "documentation": {}
     },
     {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -340,11 +356,11 @@
         "documentation": {}
     },
     {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
+        "label": "ModelSerializer",
+        "importPath": "rest_framework.serializers",
+        "description": "rest_framework.serializers",
         "isExtraImport": true,
-        "detail": "django.test",
+        "detail": "rest_framework.serializers",
         "documentation": {}
     },
     {
@@ -364,19 +380,11 @@
         "documentation": {}
     },
     {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
         "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
+        "detail": "django.test",
         "documentation": {}
     },
     {
@@ -389,6 +397,14 @@
         "documentation": {}
     },
     {
+        "label": "routers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
         "label": "serializers",
         "importPath": "rest_framework",
         "description": "rest_framework",
@@ -450,6 +466,70 @@
         "description": "rest_framework",
         "isExtraImport": true,
         "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "AllowAny",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "AllowAny",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "AllowAny",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "ModelViewSet",
+        "importPath": "rest_framework.viewsets",
+        "description": "rest_framework.viewsets",
+        "isExtraImport": true,
+        "detail": "rest_framework.viewsets",
         "documentation": {}
     },
     {
@@ -458,38 +538,6 @@
         "description": "pprint",
         "isExtraImport": true,
         "detail": "pprint",
-        "documentation": {}
-    },
-    {
-        "label": "AllowAny",
-        "importPath": "rest_framework.permissions",
-        "description": "rest_framework.permissions",
-        "isExtraImport": true,
-        "detail": "rest_framework.permissions",
-        "documentation": {}
-    },
-    {
-        "label": "IsAuthenticated",
-        "importPath": "rest_framework.permissions",
-        "description": "rest_framework.permissions",
-        "isExtraImport": true,
-        "detail": "rest_framework.permissions",
-        "documentation": {}
-    },
-    {
-        "label": "AllowAny",
-        "importPath": "rest_framework.permissions",
-        "description": "rest_framework.permissions",
-        "isExtraImport": true,
-        "detail": "rest_framework.permissions",
-        "documentation": {}
-    },
-    {
-        "label": "IsAuthenticated",
-        "importPath": "rest_framework.permissions",
-        "description": "rest_framework.permissions",
-        "isExtraImport": true,
-        "detail": "rest_framework.permissions",
         "documentation": {}
     },
     {
@@ -710,7 +758,7 @@
         "kind": 5,
         "importPath": "config.urls",
         "description": "config.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path('api-auth/', include('rest_framework.urls')),\n    path('mainapp/', include('mainapp.urls')),\n    path('userapp/', include('userapp.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path('api-auth/', include('rest_framework.urls')),\n    path('mainapp/', include('mainapp.urls')),\n    path('userapp/', include('userapp.urls')),\n    path('finance/', include('finance.urls')),\n]",
         "detail": "config.urls",
         "documentation": {}
     },
@@ -829,6 +877,96 @@
         "description": "finance.models",
         "peekOfCode": "MONTH_NAME = (\n        ('yan', \"Yanvar\"),\n        ('fev', \"Fevral\"),\n        ('mar', \"Mart\"),\n        ('apr', \"Aprel\"),\n        ('may', \"May\"),\n        ('iyn', \"Iyun\"),\n        ('iyl', \"Iyul\"),\n        ('avg', \"Avgust\"),\n        ('sen', \"Sen\"),",
         "detail": "finance.models",
+        "documentation": {}
+    },
+    {
+        "label": "ExpensesSerializer",
+        "kind": 6,
+        "importPath": "finance.serializers",
+        "description": "finance.serializers",
+        "peekOfCode": "class ExpensesSerializer(ModelSerializer):\n    class Meta:\n        model = Expenses\n        fields = ('__all__')\nclass PaymentSerializer(ModelSerializer):\n    class Meta:\n        model = Payment\n        fields = ('__all__')\nclass AreaSerializer(ModelSerializer):\n    class Meta:",
+        "detail": "finance.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "PaymentSerializer",
+        "kind": 6,
+        "importPath": "finance.serializers",
+        "description": "finance.serializers",
+        "peekOfCode": "class PaymentSerializer(ModelSerializer):\n    class Meta:\n        model = Payment\n        fields = ('__all__')\nclass AreaSerializer(ModelSerializer):\n    class Meta:\n        model = Area\n        fields = ('__all__')\nclass IncomeSerializer(ModelSerializer):\n    class Meta:",
+        "detail": "finance.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "AreaSerializer",
+        "kind": 6,
+        "importPath": "finance.serializers",
+        "description": "finance.serializers",
+        "peekOfCode": "class AreaSerializer(ModelSerializer):\n    class Meta:\n        model = Area\n        fields = ('__all__')\nclass IncomeSerializer(ModelSerializer):\n    class Meta:\n        model = Income\n        fields = ('__all__')",
+        "detail": "finance.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "IncomeSerializer",
+        "kind": 6,
+        "importPath": "finance.serializers",
+        "description": "finance.serializers",
+        "peekOfCode": "class IncomeSerializer(ModelSerializer):\n    class Meta:\n        model = Income\n        fields = ('__all__')",
+        "detail": "finance.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "finance.urls",
+        "description": "finance.urls",
+        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register(r'expences', ExpencesViewSet)\nrouter.register(r'payment', PaymentViewSet)\nrouter.register(r'area', AreaViewSet)\nrouter.register(r'Income', IncomeViewSet)\nurlpatterns = [\n    path('', include(router.urls))\n]",
+        "detail": "finance.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "finance.urls",
+        "description": "finance.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', include(router.urls))\n]",
+        "detail": "finance.urls",
+        "documentation": {}
+    },
+    {
+        "label": "ExpencesViewSet",
+        "kind": 6,
+        "importPath": "finance.views",
+        "description": "finance.views",
+        "peekOfCode": "class ExpencesViewSet(ModelViewSet):\n    queryset = Expenses.objects.all()\n    serializer_class = ExpensesSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass PaymentViewSet(ModelViewSet):\n    queryset = Payment.objects.all()\n    serializer_class = PaymentSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
+        "detail": "finance.views",
+        "documentation": {}
+    },
+    {
+        "label": "PaymentViewSet",
+        "kind": 6,
+        "importPath": "finance.views",
+        "description": "finance.views",
+        "peekOfCode": "class PaymentViewSet(ModelViewSet):\n    queryset = Payment.objects.all()\n    serializer_class = PaymentSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass AreaViewSet(ModelViewSet):\n    queryset = Area.objects.all()\n    serializer_class = AreaSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
+        "detail": "finance.views",
+        "documentation": {}
+    },
+    {
+        "label": "AreaViewSet",
+        "kind": 6,
+        "importPath": "finance.views",
+        "description": "finance.views",
+        "peekOfCode": "class AreaViewSet(ModelViewSet):\n    queryset = Area.objects.all()\n    serializer_class = AreaSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass IncomeViewSet(ModelViewSet):\n    queryset = Income.objects.all()\n    serializer_class = IncomeSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
+        "detail": "finance.views",
+        "documentation": {}
+    },
+    {
+        "label": "IncomeViewSet",
+        "kind": 6,
+        "importPath": "finance.views",
+        "description": "finance.views",
+        "peekOfCode": "class IncomeViewSet(ModelViewSet):\n    queryset = Income.objects.all()\n    serializer_class = IncomeSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
+        "detail": "finance.views",
         "documentation": {}
     },
     {
