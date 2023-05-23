@@ -2,12 +2,11 @@ from django.urls import path, include
 
 from rest_framework import routers
 
-from .views import BranchViewset, RoomViewset
+from .views import WorkerViewset
 
 
 router = routers.DefaultRouter()
-router.register(r'branch', BranchViewset, 'branch')
-router.register(r'room', RoomViewset, 'room')
+router.register(r'worker', WorkerViewset, 'worker')
 
 urlpatterns = [
     path('', include(router.urls)),

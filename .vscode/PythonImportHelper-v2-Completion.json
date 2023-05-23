@@ -89,6 +89,22 @@
         "documentation": {}
     },
     {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -162,6 +178,14 @@
     },
     {
         "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -356,11 +380,12 @@
         "documentation": {}
     },
     {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
+        "label": "rest_framework",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "django.shortcuts",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "detail": "rest_framework",
         "documentation": {}
     },
     {
@@ -380,6 +405,14 @@
         "documentation": {}
     },
     {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
         "label": "viewsets",
         "importPath": "rest_framework",
         "description": "rest_framework",
@@ -388,7 +421,31 @@
         "documentation": {}
     },
     {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "routers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
         "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
         "importPath": "rest_framework",
         "description": "rest_framework",
         "isExtraImport": true,
@@ -420,11 +477,43 @@
         "documentation": {}
     },
     {
+        "label": "AllowAny",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
         "label": "Response",
         "importPath": "rest_framework.response",
         "description": "rest_framework.response",
         "isExtraImport": true,
         "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "isExtraImport": true,
+        "detail": "config.settings",
         "documentation": {}
     },
     {
@@ -629,7 +718,7 @@
         "kind": 5,
         "importPath": "config.urls",
         "description": "config.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path('api-auth/', include('rest_framework.urls')),\n    path('mainapp/', include('mainapp.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path('api-auth/', include('rest_framework.urls')),\n    path('mainapp/', include('mainapp.urls')),\n    path('userapp/', include('userapp.urls')),\n]",
         "detail": "config.urls",
         "documentation": {}
     },
@@ -863,7 +952,7 @@
         "kind": 5,
         "importPath": "mainapp.urls",
         "description": "mainapp.urls",
-        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register(r'branch', BranchViewset, 'branch')\nurlpatterns = [\n    path('', include(router.urls)),\n]",
+        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register(r'branch', BranchViewset, 'branch')\nrouter.register(r'room', RoomViewset, 'room')\nurlpatterns = [\n    path('', include(router.urls)),\n]",
         "detail": "mainapp.urls",
         "documentation": {}
     },
@@ -881,7 +970,16 @@
         "kind": 6,
         "importPath": "mainapp.views",
         "description": "mainapp.views",
-        "peekOfCode": "class BranchViewset(viewsets.ModelViewSet):\n    queryset = Branch.objects.all()\n    serializer_class = BranchSerializer\n    permission_classes = [AllowAny]\n    \"\"\" CRUD functions \"\"\"\n    def create(self, request, *args, **kwargs):\n        try:\n            data = request.data\n        except:\n            return Response({'error':\"Ma'lumotni olishda xatolik yuzaga keldi !!!\"})",
+        "peekOfCode": "class BranchViewset(viewsets.ModelViewSet):\n    queryset = Branch.objects.all()\n    serializer_class = BranchSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n    \"\"\" CRUD functions \"\"\"\n    def create(self, request, *args, **kwargs):\n        try:\n            data = request.data\n        except:",
+        "detail": "mainapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "RoomViewset",
+        "kind": 6,
+        "importPath": "mainapp.views",
+        "description": "mainapp.views",
+        "peekOfCode": "class RoomViewset(viewsets.ModelViewSet):\n    queryset = Room.objects.all()\n    serializer_class = RoomSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n    def create(self, request, *args, **kwargs):\n        request_data = request.data\n        try:\n            branch = Branch.objects.get(id=request_data['branch'])\n        except:",
         "detail": "mainapp.views",
         "documentation": {}
     },
@@ -892,6 +990,15 @@
         "description": "userapp.migrations.0001_initial",
         "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = []\n    operations = [\n        migrations.CreateModel(\n            name=\"Field\",\n            fields=[\n                (\n                    \"id\",\n                    models.BigAutoField(",
         "detail": "userapp.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "userapp.migrations.0002_rename_diriction_worker_direction",
+        "description": "userapp.migrations.0002_rename_diriction_worker_direction",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('userapp', '0001_initial'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='worker',\n            old_name='diriction',\n            new_name='direction',\n        ),",
+        "detail": "userapp.migrations.0002_rename_diriction_worker_direction",
         "documentation": {}
     },
     {
@@ -962,7 +1069,7 @@
         "kind": 6,
         "importPath": "userapp.models",
         "description": "userapp.models",
-        "peekOfCode": "class Worker(models.Model):\n    \"\"\" Worker - xodimlar uchun model \"\"\"\n    full_name = models.CharField(max_length=100, verbose_name=\"Ism familya\")\n    slug  = AutoSlugField(populate_from=\"full_name\", unique=True)\n    role = models.ForeignKey(Role, on_delete=models.CASCADE, verbose_name=\"Vazifasi\", related_name=\"workers\")\n    diriction = models.ForeignKey(Field, on_delete=models.CASCADE, verbose_name=\"O'qtuvchining yo'nalishi\", related_name=\"workers\")\n    phone_number = models.CharField(max_length=12, validators=[_validate_phone], verbose_name=\"tel. raqam\", unique=True)\n    passport = models.CharField(max_length=15, verbose_name=\"Passport\", unique=True)\n    # percentage - ishchining maoshi foizga nisbatan hisoblansa\n    percentage = models.PositiveIntegerField(default=10, verbose_name=\"Ishchining foizi\", blank=True, null=True)",
+        "peekOfCode": "class Worker(models.Model):\n    \"\"\" Worker - xodimlar uchun model \"\"\"\n    full_name = models.CharField(max_length=100, verbose_name=\"Ism familya\")\n    slug  = AutoSlugField(populate_from=\"full_name\", unique=True)\n    role = models.ForeignKey(Role, on_delete=models.CASCADE, verbose_name=\"Vazifasi\", related_name=\"workers\")\n    direction = models.ForeignKey(Field, on_delete=models.CASCADE, verbose_name=\"O'qtuvchining yo'nalishi\", related_name=\"workers\")\n    phone_number = models.CharField(max_length=12, validators=[_validate_phone], verbose_name=\"tel. raqam\", unique=True)\n    passport = models.CharField(max_length=15, verbose_name=\"Passport\", unique=True)\n    # percentage - ishchining maoshi foizga nisbatan hisoblansa\n    percentage = models.PositiveIntegerField(default=10, verbose_name=\"Ishchining foizi\", blank=True, null=True)",
         "detail": "userapp.models",
         "documentation": {}
     },
@@ -1000,6 +1107,42 @@
         "description": "userapp.models",
         "peekOfCode": "TIME = (\n    ('8',\"8:00-11:00\"),\n    ('12',\"12:00-14:00\"),\n    ('14',\"14:00-17:00\"),\n)\nclass Field(models.Model):\n    \"\"\" Field modeli - o'quv markazdagi yo'nalish(kurs)larni aniqlsh uchun yaratilgan. M: Backend, Frontend, 3D, ...\"\"\"\n    name  = models.CharField(max_length=100, unique=True, verbose_name=\"Nomi\")\n    slug  = AutoSlugField(populate_from=\"name\", unique=True)\n    cost = models.DecimalField(max_digits=8, decimal_places=2, default=100000, blank=True, null=True, verbose_name=\"Narxi\")",
         "detail": "userapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "WorkerSerializer",
+        "kind": 6,
+        "importPath": "userapp.serializers",
+        "description": "userapp.serializers",
+        "peekOfCode": "class WorkerSerializer(serializers.ModelSerializer):\n    class Meta:\n        model  = Worker\n        fields = ('__all__')",
+        "detail": "userapp.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "userapp.urls",
+        "description": "userapp.urls",
+        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register(r'worker', WorkerViewset, 'worker')\nurlpatterns = [\n    path('', include(router.urls)),\n]",
+        "detail": "userapp.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "userapp.urls",
+        "description": "userapp.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', include(router.urls)),\n]",
+        "detail": "userapp.urls",
+        "documentation": {}
+    },
+    {
+        "label": "WorkerViewset",
+        "kind": 6,
+        "importPath": "userapp.views",
+        "description": "userapp.views",
+        "peekOfCode": "class WorkerViewset(viewsets.ModelViewSet):\n    queryset = Worker.objects.all()\n    serializer_class = WorkerSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n    def create(self, request, *args, **kwargs):\n        request_data = request.data\n        print(request_data)\n        try:\n            direction = Field.objects.get(id=request_data['direction'])",
+        "detail": "userapp.views",
         "documentation": {}
     },
     {
