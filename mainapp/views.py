@@ -6,7 +6,6 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework import status, viewsets
 
-from config.settings import DATABASES
 from .models import Branch, Room, Group
 from .serializers import BranchSerializer, RoomSerializer, GroupSerializer
 
@@ -122,3 +121,9 @@ class RoomViewset(viewsets.ModelViewSet):
         data = self.get_object()
         data.delete()
         return Response({"Ma'lumot o'chirildi"})
+    
+class GroupViewset(viewsets.ModelViewSet):
+    queryset = Group.objects.all()
+    serializer_class = GroupSerializer
+    permission_classes = [AllowAny]
+    lookup_field = 'slug'

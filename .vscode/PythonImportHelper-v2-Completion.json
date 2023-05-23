@@ -509,14 +509,6 @@
         "documentation": {}
     },
     {
-        "label": "DATABASES",
-        "importPath": "config.settings",
-        "description": "config.settings",
-        "isExtraImport": true,
-        "detail": "config.settings",
-        "documentation": {}
-    },
-    {
         "label": "django.core.validators",
         "kind": 6,
         "isExtraImport": true,
@@ -952,7 +944,7 @@
         "kind": 5,
         "importPath": "mainapp.urls",
         "description": "mainapp.urls",
-        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register(r'branch', BranchViewset, 'branch')\nrouter.register(r'room', RoomViewset, 'room')\nurlpatterns = [\n    path('', include(router.urls)),\n]",
+        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register(r'branch', BranchViewset, 'branch')\nrouter.register(r'room', RoomViewset, 'room')\nrouter.register(r'group', GroupViewset, 'group')\nurlpatterns = [\n    path('', include(router.urls)),\n]",
         "detail": "mainapp.urls",
         "documentation": {}
     },
@@ -980,6 +972,15 @@
         "importPath": "mainapp.views",
         "description": "mainapp.views",
         "peekOfCode": "class RoomViewset(viewsets.ModelViewSet):\n    queryset = Room.objects.all()\n    serializer_class = RoomSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n    def create(self, request, *args, **kwargs):\n        request_data = request.data\n        try:\n            branch = Branch.objects.get(id=request_data['branch'])\n        except:",
+        "detail": "mainapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "GroupViewset",
+        "kind": 6,
+        "importPath": "mainapp.views",
+        "description": "mainapp.views",
+        "peekOfCode": "class GroupViewset(viewsets.ModelViewSet):\n    queryset = Group.objects.all()\n    serializer_class = GroupSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
         "detail": "mainapp.views",
         "documentation": {}
     },
@@ -1114,7 +1115,34 @@
         "kind": 6,
         "importPath": "userapp.serializers",
         "description": "userapp.serializers",
-        "peekOfCode": "class WorkerSerializer(serializers.ModelSerializer):\n    class Meta:\n        model  = Worker\n        fields = ('__all__')",
+        "peekOfCode": "class WorkerSerializer(serializers.ModelSerializer):\n    class Meta:\n        model  = Worker\n        fields = ('__all__')\nclass RoleSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Role\n        fields = ('__all__')\nclass StudentSerializer(serializers.ModelSerializer):\n    field_name = serializers.CharField(source='field.name')",
+        "detail": "userapp.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "RoleSerializer",
+        "kind": 6,
+        "importPath": "userapp.serializers",
+        "description": "userapp.serializers",
+        "peekOfCode": "class RoleSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Role\n        fields = ('__all__')\nclass StudentSerializer(serializers.ModelSerializer):\n    field_name = serializers.CharField(source='field.name')\n    class Meta:\n        model = Student\n        fields = ('__all__')\n        read_only_fields = (",
+        "detail": "userapp.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "StudentSerializer",
+        "kind": 6,
+        "importPath": "userapp.serializers",
+        "description": "userapp.serializers",
+        "peekOfCode": "class StudentSerializer(serializers.ModelSerializer):\n    field_name = serializers.CharField(source='field.name')\n    class Meta:\n        model = Student\n        fields = ('__all__')\n        read_only_fields = (\n            'field_name',\n        )\nclass FieldSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "userapp.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "FieldSerializer",
+        "kind": 6,
+        "importPath": "userapp.serializers",
+        "description": "userapp.serializers",
+        "peekOfCode": "class FieldSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Field\n        fields = ('__all__')",
         "detail": "userapp.serializers",
         "documentation": {}
     },
@@ -1123,7 +1151,7 @@
         "kind": 5,
         "importPath": "userapp.urls",
         "description": "userapp.urls",
-        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register(r'worker', WorkerViewset, 'worker')\nurlpatterns = [\n    path('', include(router.urls)),\n]",
+        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register(r'worker', WorkerViewset, 'worker')\nrouter.register(r'field', FieldViewset, 'field')\nrouter.register(r'student', StudentViewset, 'student')\nrouter.register(r'role', RoleViewset, 'role')\nurlpatterns = [\n    path('', include(router.urls)),\n]",
         "detail": "userapp.urls",
         "documentation": {}
     },
@@ -1142,6 +1170,33 @@
         "importPath": "userapp.views",
         "description": "userapp.views",
         "peekOfCode": "class WorkerViewset(viewsets.ModelViewSet):\n    queryset = Worker.objects.all()\n    serializer_class = WorkerSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n    def create(self, request, *args, **kwargs):\n        request_data = request.data\n        print(request_data)\n        try:\n            direction = Field.objects.get(id=request_data['direction'])",
+        "detail": "userapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "StudentViewset",
+        "kind": 6,
+        "importPath": "userapp.views",
+        "description": "userapp.views",
+        "peekOfCode": "class StudentViewset(viewsets.ModelViewSet):\n    queryset = Student.objects.all()\n    serializer_class = StudentSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass FieldViewset(viewsets.ModelViewSet):\n    queryset = Field.objects.all()\n    serializer_class = FieldSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
+        "detail": "userapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "FieldViewset",
+        "kind": 6,
+        "importPath": "userapp.views",
+        "description": "userapp.views",
+        "peekOfCode": "class FieldViewset(viewsets.ModelViewSet):\n    queryset = Field.objects.all()\n    serializer_class = FieldSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass RoleViewset(viewsets.ModelViewSet):\n    queryset = Role.objects.all()\n    serializer_class = RoleSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
+        "detail": "userapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "RoleViewset",
+        "kind": 6,
+        "importPath": "userapp.views",
+        "description": "userapp.views",
+        "peekOfCode": "class RoleViewset(viewsets.ModelViewSet):\n    queryset = Role.objects.all()\n    serializer_class = RoleSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
         "detail": "userapp.views",
         "documentation": {}
     },

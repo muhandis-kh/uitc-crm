@@ -3,8 +3,8 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework import status, viewsets
 
-from .models import Worker, Field, Role
-from .serializers import WorkerSerializer
+from .models import Worker, Field, Role, Student
+from .serializers import WorkerSerializer, StudentSerializer, FieldSerializer, RoleSerializer
 
 # Create your views here.
        
@@ -74,3 +74,21 @@ class WorkerViewset(viewsets.ModelViewSet):
         data = self.get_object()
         data.delete()
         return Response({"Ma'lumot o'chirildi"})
+
+class StudentViewset(viewsets.ModelViewSet):
+    queryset = Student.objects.all()
+    serializer_class = StudentSerializer
+    permission_classes = [AllowAny]
+    lookup_field = 'slug'
+    
+class FieldViewset(viewsets.ModelViewSet):
+    queryset = Field.objects.all()
+    serializer_class = FieldSerializer
+    permission_classes = [AllowAny]
+    lookup_field = 'slug'
+    
+class RoleViewset(viewsets.ModelViewSet):
+    queryset = Role.objects.all()
+    serializer_class = RoleSerializer
+    permission_classes = [AllowAny]
+    lookup_field = 'slug'
