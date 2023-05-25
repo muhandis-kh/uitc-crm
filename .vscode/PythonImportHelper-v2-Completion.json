@@ -388,15 +388,6 @@
         "documentation": {}
     },
     {
-        "label": "rest_framework",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
         "label": "routers",
         "importPath": "rest_framework",
         "description": "rest_framework",
@@ -466,14 +457,6 @@
         "description": "rest_framework",
         "isExtraImport": true,
         "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
         "documentation": {}
     },
     {
@@ -533,14 +516,6 @@
         "documentation": {}
     },
     {
-        "label": "pprint",
-        "importPath": "pprint",
-        "description": "pprint",
-        "isExtraImport": true,
-        "detail": "pprint",
-        "documentation": {}
-    },
-    {
         "label": "Response",
         "importPath": "rest_framework.response",
         "description": "rest_framework.response",
@@ -554,6 +529,14 @@
         "description": "rest_framework.response",
         "isExtraImport": true,
         "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "ListAPIView",
+        "importPath": "rest_framework.generics",
+        "description": "rest_framework.generics",
+        "isExtraImport": true,
+        "detail": "rest_framework.generics",
         "documentation": {}
     },
     {
@@ -1037,7 +1020,7 @@
         "kind": 6,
         "importPath": "mainapp.models",
         "description": "mainapp.models",
-        "peekOfCode": "class Group(models.Model):\n    field = models.ForeignKey(Field, on_delete=models.CASCADE, \n                              related_name='groups', verbose_name=\"Kurs\")\n    name = models.CharField(max_length=50, verbose_name=\"Nominal\")\n    slug  = AutoSlugField(populate_from=\"name\", unique=True)\n    teacher = models.ForeignKey(Worker, on_delete=models.CASCADE, related_name='groups', \n                                verbose_name=\"O'qtuvchi\")\n    students = models.ManyToManyField(Student, related_name=\"students\", \n                                      verbose_name=\"O'quvchilar\")\n    day = models.CharField(max_length=25, choices=DAYS, default='toq')",
+        "peekOfCode": "class Group(models.Model):\n    field = models.ForeignKey(Field, on_delete=models.CASCADE, \n                              related_name='groups', verbose_name=\"Kurs\")\n    name = models.CharField(max_length=50, verbose_name=\"Nominal\")\n    slug  = AutoSlugField(populate_from=\"name\", unique=True)\n    teacher = models.ForeignKey(Worker, on_delete=models.CASCADE, related_name='groups', \n                                verbose_name=\"O'qituvchi\")\n    students = models.ManyToManyField(Student, related_name=\"students\", \n                                      verbose_name=\"O'quvchilar\")\n    day = models.CharField(max_length=25, choices=DAYS, default='toq')",
         "detail": "mainapp.models",
         "documentation": {}
     },
@@ -1064,7 +1047,7 @@
         "kind": 6,
         "importPath": "mainapp.serializers",
         "description": "mainapp.serializers",
-        "peekOfCode": "class RoomSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Room\n        fields = ('__all__')\nclass GroupSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Group\n        fields  =('__all__')",
+        "peekOfCode": "class RoomSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Room\n        fields = ('__all__')\nclass GroupSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Group\n        fields  =('__all__')\nclass BranchAPISerializer(serializers.ModelSerializer):\n    class Meta:",
         "detail": "mainapp.serializers",
         "documentation": {}
     },
@@ -1073,7 +1056,34 @@
         "kind": 6,
         "importPath": "mainapp.serializers",
         "description": "mainapp.serializers",
-        "peekOfCode": "class GroupSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Group\n        fields  =('__all__')",
+        "peekOfCode": "class GroupSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Group\n        fields  =('__all__')\nclass BranchAPISerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Branch\n        fields = ('id', 'name', 'adress')\nclass RoomAPISerializer(serializers.ModelSerializer):\n    branch_name = serializers.CharField(source='branch.name')",
+        "detail": "mainapp.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "BranchAPISerializer",
+        "kind": 6,
+        "importPath": "mainapp.serializers",
+        "description": "mainapp.serializers",
+        "peekOfCode": "class BranchAPISerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Branch\n        fields = ('id', 'name', 'adress')\nclass RoomAPISerializer(serializers.ModelSerializer):\n    branch_name = serializers.CharField(source='branch.name')\n    class Meta:\n        model = Room\n        fields = ('id', 'number', 'capacity', 'branch', 'branch_name')\nclass GroupAPISerializer(serializers.ModelSerializer):",
+        "detail": "mainapp.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "RoomAPISerializer",
+        "kind": 6,
+        "importPath": "mainapp.serializers",
+        "description": "mainapp.serializers",
+        "peekOfCode": "class RoomAPISerializer(serializers.ModelSerializer):\n    branch_name = serializers.CharField(source='branch.name')\n    class Meta:\n        model = Room\n        fields = ('id', 'number', 'capacity', 'branch', 'branch_name')\nclass GroupAPISerializer(serializers.ModelSerializer):\n    branch_name = serializers.CharField(source='branch.name')\n    field_name = serializers.CharField(source='field.name')\n    teacher_name = serializers.CharField(source='teacher.full_name')\n    room_name = serializers.CharField(source='room.slug')",
+        "detail": "mainapp.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "GroupAPISerializer",
+        "kind": 6,
+        "importPath": "mainapp.serializers",
+        "description": "mainapp.serializers",
+        "peekOfCode": "class GroupAPISerializer(serializers.ModelSerializer):\n    branch_name = serializers.CharField(source='branch.name')\n    field_name = serializers.CharField(source='field.name')\n    teacher_name = serializers.CharField(source='teacher.full_name')\n    room_name = serializers.CharField(source='room.slug')\n    class Meta:\n        model = Group\n        fields = ('id', 'branch', 'branch_name', 'field', 'field_name', 'name', 'room', 'room_name', 'teacher', 'teacher_name', 'day', 'time')",
         "detail": "mainapp.serializers",
         "documentation": {}
     },
@@ -1082,7 +1092,7 @@
         "kind": 5,
         "importPath": "mainapp.urls",
         "description": "mainapp.urls",
-        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register(r'branch', BranchViewset, 'branch')\nrouter.register(r'room', RoomViewset, 'room')\nrouter.register(r'group', GroupViewset, 'group')\nurlpatterns = [\n    path('', include(router.urls)),\n]",
+        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register(r'branch', BranchViewset, 'branch')\nrouter.register(r'room', RoomViewset, 'room')\nrouter.register(r'group', GroupViewset, 'group')\nurlpatterns = [\n    path('', include(router.urls)),\n    path('branch-api', BranchAPIListview.as_view()),\n    path('room-api', RoomAPIListview.as_view()),\n    path('group-api', GroupAPIListview.as_view()),\n]",
         "detail": "mainapp.urls",
         "documentation": {}
     },
@@ -1091,7 +1101,7 @@
         "kind": 5,
         "importPath": "mainapp.urls",
         "description": "mainapp.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', include(router.urls)),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', include(router.urls)),\n    path('branch-api', BranchAPIListview.as_view()),\n    path('room-api', RoomAPIListview.as_view()),\n    path('group-api', GroupAPIListview.as_view()),\n]",
         "detail": "mainapp.urls",
         "documentation": {}
     },
@@ -1118,7 +1128,34 @@
         "kind": 6,
         "importPath": "mainapp.views",
         "description": "mainapp.views",
-        "peekOfCode": "class GroupViewset(viewsets.ModelViewSet):\n    queryset = Group.objects.all()\n    serializer_class = GroupSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
+        "peekOfCode": "class GroupViewset(viewsets.ModelViewSet):\n    queryset = Group.objects.all()\n    serializer_class = GroupSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n\"\"\" API for users \"\"\"\nclass BranchAPIListview(ListAPIView):\n    queryset = Branch.objects.filter(status=True)\n    serializer_class = BranchAPISerializer\n    permission_classes = [AllowAny]",
+        "detail": "mainapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "BranchAPIListview",
+        "kind": 6,
+        "importPath": "mainapp.views",
+        "description": "mainapp.views",
+        "peekOfCode": "class BranchAPIListview(ListAPIView):\n    queryset = Branch.objects.filter(status=True)\n    serializer_class = BranchAPISerializer\n    permission_classes = [AllowAny]\nclass RoomAPIListview(ListAPIView):\n    queryset = Room.objects.filter(status=True)\n    serializer_class = RoomAPISerializer\n    permission_classes = [AllowAny]\nclass GroupAPIListview(ListAPIView):\n    queryset = Group.objects.filter(status=True)",
+        "detail": "mainapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "RoomAPIListview",
+        "kind": 6,
+        "importPath": "mainapp.views",
+        "description": "mainapp.views",
+        "peekOfCode": "class RoomAPIListview(ListAPIView):\n    queryset = Room.objects.filter(status=True)\n    serializer_class = RoomAPISerializer\n    permission_classes = [AllowAny]\nclass GroupAPIListview(ListAPIView):\n    queryset = Group.objects.filter(status=True)\n    serializer_class = GroupAPISerializer\n    permission_classes = [AllowAny]",
+        "detail": "mainapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "GroupAPIListview",
+        "kind": 6,
+        "importPath": "mainapp.views",
+        "description": "mainapp.views",
+        "peekOfCode": "class GroupAPIListview(ListAPIView):\n    queryset = Group.objects.filter(status=True)\n    serializer_class = GroupAPISerializer\n    permission_classes = [AllowAny]",
         "detail": "mainapp.views",
         "documentation": {}
     },

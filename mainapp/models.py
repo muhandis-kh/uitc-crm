@@ -58,7 +58,7 @@ class Group(models.Model):
     name = models.CharField(max_length=50, verbose_name="Nominal")
     slug  = AutoSlugField(populate_from="name", unique=True)
     teacher = models.ForeignKey(Worker, on_delete=models.CASCADE, related_name='groups', 
-                                verbose_name="O'qtuvchi")
+                                verbose_name="O'qituvchi")
     students = models.ManyToManyField(Student, related_name="students", 
                                       verbose_name="O'quvchilar")
     day = models.CharField(max_length=25, choices=DAYS, default='toq')
@@ -73,7 +73,7 @@ class Group(models.Model):
 
     class Meta:
         verbose_name = "Guruh"
-        verbose_name_plural = "Guruhar"
+        verbose_name_plural = "Guruhlar"
         ordering = ('-created_at',)
 
     def __str__(self):

@@ -1,15 +1,12 @@
-from django.shortcuts import render
-from pprint import pprint
 
-import rest_framework
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework import status, viewsets
-
+from rest_framework.generics import ListAPIView
 from .models import Branch, Room, Group
-from .serializers import BranchSerializer, RoomSerializer, GroupSerializer
+from .serializers import BranchSerializer, RoomSerializer, GroupSerializer,\
+                        BranchAPISerializer, RoomAPISerializer, GroupAPISerializer
 
-# Create your views here.
 
 class BranchViewset(viewsets.ModelViewSet):
     queryset = Branch.objects.all()
@@ -127,3 +124,21 @@ class GroupViewset(viewsets.ModelViewSet):
     serializer_class = GroupSerializer
     permission_classes = [AllowAny]
     lookup_field = 'slug'
+    
+    
+""" API for users """
+class BranchAPIListview(ListAPIView):
+    queryset = Branch.objects.filter(status=True)
+    serializer_class = BranchAPISerializer
+    permission_classes = [AllowAny]
+    
+class RoomAPIListview(ListAPIView):
+    queryset = Room.objects.filter(status=True)
+    serializer_class = RoomAPISerializer
+    permission_classes = [AllowAny]
+    
+class GroupAPIListview(ListAPIView):
+    queryset = Group.objects.filter(status=True)
+    serializer_class = GroupAPISerializer
+    permission_classes = [AllowAny]
+    
