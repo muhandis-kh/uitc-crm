@@ -21,20 +21,23 @@ class GroupSerializer(serializers.ModelSerializer):
 class BranchAPISerializer(serializers.ModelSerializer):
     class Meta:
         model = Branch
-        fields = ('id', 'name', 'adress')
+        fields = ('id', 'name', 'adress', 'slug')
 
 class RoomAPISerializer(serializers.ModelSerializer):
     branch_name = serializers.CharField(source='branch.name')
+    # branch_adress = serializers.CharField(source='branch.adress')
+    # branch_status = serializers.BooleanField(source='branch.status')
+    # branch_created_at = serializers.DateTimeField(source='branch.created_at')
     class Meta:
         model = Room
-        fields = ('id', 'number', 'capacity', 'branch', 'branch_name')
+        fields = ('id', 'number', 'capacity', 'branch_name', 'slug')
 
 class GroupAPISerializer(serializers.ModelSerializer):
     branch_name = serializers.CharField(source='branch.name')
     field_name = serializers.CharField(source='field.name')
     teacher_name = serializers.CharField(source='teacher.full_name')
-    room_name = serializers.CharField(source='room.slug')
-    
+    room = serializers.IntegerField(source='room.number')
+
     class Meta:
         model = Group
-        fields = ('id', 'branch', 'branch_name', 'field', 'field_name', 'name', 'room', 'room_name', 'teacher', 'teacher_name', 'day', 'time')
+        fields = ('id', 'branch_name', 'field_name', 'name', 'room', 'teacher_name', 'day', 'time', 'slug')

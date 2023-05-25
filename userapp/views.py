@@ -1,10 +1,13 @@
 
+from rest_framework.generics import ListAPIView, RetrieveAPIView
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework import status, viewsets
 
+
 from .models import Worker, Field, Role, Student
-from .serializers import WorkerSerializer, StudentSerializer, FieldSerializer, RoleSerializer
+from .serializers import (FieldSerializer, RoleSerializer, StudentSerializer, WorkerAPISerializer, StudentAPISerializer,
+    WorkerSerializer)
 
 # Create your views here.
        
@@ -92,3 +95,28 @@ class RoleViewset(viewsets.ModelViewSet):
     serializer_class = RoleSerializer
     permission_classes = [AllowAny]
     lookup_field = 'slug'
+    
+""" API """
+
+class WorkerListview(ListAPIView):
+    queryset = Worker.objects.filter(status=True)
+    serializer_class = WorkerAPISerializer
+    permission_classes = [AllowAny]
+    
+class WorkerDetailview(RetrieveAPIView):
+    queryset = Worker.objects.filter(status=True)
+    serializer_class = WorkerAPISerializer
+    permission_classes = [AllowAny]
+    lookup_field = 'slug'
+    
+class StudentListview(ListAPIView):
+    queryset = Student.objects.filter(status=True)
+    serializer_class = StudentAPISerializer
+    permission_classes = [AllowAny]
+    
+class StudentDetailview(RetrieveAPIView):
+    queryset = Student.objects.filter(status=True)
+    serializer_class = StudentAPISerializer
+    permission_classes = [AllowAny]
+    lookup_field = ('slug')
+    

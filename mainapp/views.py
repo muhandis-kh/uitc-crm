@@ -2,7 +2,7 @@
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework import status, viewsets
-from rest_framework.generics import ListAPIView
+from rest_framework.generics import ListAPIView, RetrieveAPIView
 from .models import Branch, Room, Group
 from .serializers import BranchSerializer, RoomSerializer, GroupSerializer,\
                         BranchAPISerializer, RoomAPISerializer, GroupAPISerializer
@@ -132,13 +132,31 @@ class BranchAPIListview(ListAPIView):
     serializer_class = BranchAPISerializer
     permission_classes = [AllowAny]
     
+class BranchAPIDetailview(RetrieveAPIView):
+    queryset = Branch.objects.filter(status=True)
+    serializer_class = BranchAPISerializer
+    permission_classes = [AllowAny]
+    lookup_field = 'slug'
+    
 class RoomAPIListview(ListAPIView):
     queryset = Room.objects.filter(status=True)
     serializer_class = RoomAPISerializer
     permission_classes = [AllowAny]
     
+class RoomAPIDetailview(RetrieveAPIView):
+    queryset = Room.objects.filter(status=True)
+    serializer_class = RoomAPISerializer
+    permission_classes = [AllowAny]
+    lookup_field = 'slug'
+    
 class GroupAPIListview(ListAPIView):
     queryset = Group.objects.filter(status=True)
     serializer_class = GroupAPISerializer
     permission_classes = [AllowAny]
+    
+class GroupAPIDetailview(RetrieveAPIView):
+    queryset = Group.objects.filter(status=True)
+    serializer_class = GroupAPISerializer
+    permission_classes = [AllowAny]
+    lookup_field = 'slug'
     

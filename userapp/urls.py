@@ -2,7 +2,8 @@ from django.urls import path, include
 
 from rest_framework import routers
 
-from .views import WorkerViewset, FieldViewset, StudentViewset, RoleViewset
+from .views import (FieldViewset, RoleViewset, StudentDetailview, StudentListview, StudentViewset, WorkerDetailview,
+    WorkerListview, WorkerViewset)
 
 
 router = routers.DefaultRouter()
@@ -14,6 +15,10 @@ router.register(r'role', RoleViewset, 'role')
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('worker-api/<slug:slug>', WorkerDetailview.as_view()),
+    path('worker-api', WorkerListview.as_view()),
+    path('student-api/<slug:slug>', StudentDetailview.as_view()),
+    path('student-api', StudentListview.as_view()),
 ]
 
 
