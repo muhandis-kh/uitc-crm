@@ -77,7 +77,7 @@ class RoomViewset(viewsets.ModelViewSet):
     permission_classes = [AllowAny]
     lookup_field = 'slug'
     filter_backends = [filters.SearchFilter] # qidiruv parametrlari 
-    search_fields = ['name', 'adress'] # qidiruv parametrlari
+    search_fields = ['number', 'capacity'] # qidiruv parametrlari
 
 
     def create(self, request, *args, **kwargs):
@@ -131,6 +131,7 @@ class Groupviewset(viewsets.ModelViewSet):
     serializer_class = GroupSerializer
     permission_classes = [AllowAny]
     lookup_field = 'slug'
+    filterset_fields = ['name', 'status']
 
 """ API """
 class BranchAPIListview(ListAPIView):

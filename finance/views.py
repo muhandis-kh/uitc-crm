@@ -15,23 +15,28 @@ class ExpensesViewsets(ModelViewSet):
     serializer_class = ExpensesSerializer
     permission_classes= [AllowAny]
     lookup_field = 'slug'
+    filterset_fields = ['name', 'amount', 'status']
 
 class PaymentViewsets(ModelViewSet):
     queryset =  Payment.objects.all()
     serializer_class = PaymentSerializer
     permission_classes= [AllowAny]
+    filterset_fields = ['name', 'amount', 'status', 'branch__name', 'group__name']
 
 class AreaViewsets(ModelViewSet):
     queryset =  Area.objects.all()
     serializer_class = AreaSerializer
     permission_classes= [AllowAny]
     lookup_field = 'slug'
+    filterset_fields = ['name', 'status']
+    
 
 class IncomeViewsets(ModelViewSet):
     queryset =  Income.objects.all()
     serializer_class = IncomeSerializer
     permission_classes= [AllowAny]
     lookup_field = 'slug'
+    filterset_fields = ['name', 'status', 'amount', 'area__name', 'branch__name']
 
 """ API """
 class ExpensesAPIViewsets(ModelViewSet):

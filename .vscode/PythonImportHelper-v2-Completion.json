@@ -1060,7 +1060,7 @@
         "kind": 5,
         "importPath": "finance.urls",
         "description": "finance.urls",
-        "peekOfCode": "router = DefaultRouter()\nrouter.register(r'expenses', ExpensesViewsets)\nrouter.register(r'payment', PaymentViewsets)\nrouter.register(r'area', AreaViewsets)\nrouter.register(r'income', IncomeViewsets)\nrouter.register(r'expenses-api', ExpensesAPIViewsets)\nrouter.register(r'payment-api', PaymentAPIViewsets)\nrouter.register(r'area-api', AreaAPIViewsets)\nrouter.register(r'income-api', IncomeAPIViewsets)\nurlpatterns = [",
+        "peekOfCode": "router = DefaultRouter()\nrouter.register(r'expenses', ExpensesViewsets, 'expenses')\nrouter.register(r'payment', PaymentViewsets, 'payment')\nrouter.register(r'area', AreaViewsets, 'area')\nrouter.register(r'income', IncomeViewsets, 'income')\nrouter.register(r'expenses-api', ExpensesAPIViewsets, 'expenses-api')\nrouter.register(r'payment-api', PaymentAPIViewsets, 'payment-api')\nrouter.register(r'area-api', AreaAPIViewsets, 'area-api')\nrouter.register(r'income-api', IncomeAPIViewsets, 'income-api')\nurlpatterns = [",
         "detail": "finance.urls",
         "documentation": {}
     },
@@ -1078,7 +1078,7 @@
         "kind": 6,
         "importPath": "finance.views",
         "description": "finance.views",
-        "peekOfCode": "class ExpensesViewsets(ModelViewSet):\n    queryset =  Expenses.objects.all()\n    serializer_class = ExpensesSerializer\n    permission_classes= [AllowAny]\n    lookup_field = 'slug'\nclass PaymentViewsets(ModelViewSet):\n    queryset =  Payment.objects.all()\n    serializer_class = PaymentSerializer\n    permission_classes= [AllowAny]\nclass AreaViewsets(ModelViewSet):",
+        "peekOfCode": "class ExpensesViewsets(ModelViewSet):\n    queryset =  Expenses.objects.all()\n    serializer_class = ExpensesSerializer\n    permission_classes= [AllowAny]\n    lookup_field = 'slug'\n    filterset_fields = ['name', 'amount', 'status']\nclass PaymentViewsets(ModelViewSet):\n    queryset =  Payment.objects.all()\n    serializer_class = PaymentSerializer\n    permission_classes= [AllowAny]",
         "detail": "finance.views",
         "documentation": {}
     },
@@ -1087,7 +1087,7 @@
         "kind": 6,
         "importPath": "finance.views",
         "description": "finance.views",
-        "peekOfCode": "class PaymentViewsets(ModelViewSet):\n    queryset =  Payment.objects.all()\n    serializer_class = PaymentSerializer\n    permission_classes= [AllowAny]\nclass AreaViewsets(ModelViewSet):\n    queryset =  Area.objects.all()\n    serializer_class = AreaSerializer\n    permission_classes= [AllowAny]\n    lookup_field = 'slug'\nclass IncomeViewsets(ModelViewSet):",
+        "peekOfCode": "class PaymentViewsets(ModelViewSet):\n    queryset =  Payment.objects.all()\n    serializer_class = PaymentSerializer\n    permission_classes= [AllowAny]\n    filterset_fields = ['name', 'amount', 'status', 'branch__name', 'group__name']\nclass AreaViewsets(ModelViewSet):\n    queryset =  Area.objects.all()\n    serializer_class = AreaSerializer\n    permission_classes= [AllowAny]\n    lookup_field = 'slug'",
         "detail": "finance.views",
         "documentation": {}
     },
@@ -1096,7 +1096,7 @@
         "kind": 6,
         "importPath": "finance.views",
         "description": "finance.views",
-        "peekOfCode": "class AreaViewsets(ModelViewSet):\n    queryset =  Area.objects.all()\n    serializer_class = AreaSerializer\n    permission_classes= [AllowAny]\n    lookup_field = 'slug'\nclass IncomeViewsets(ModelViewSet):\n    queryset =  Income.objects.all()\n    serializer_class = IncomeSerializer\n    permission_classes= [AllowAny]\n    lookup_field = 'slug'",
+        "peekOfCode": "class AreaViewsets(ModelViewSet):\n    queryset =  Area.objects.all()\n    serializer_class = AreaSerializer\n    permission_classes= [AllowAny]\n    lookup_field = 'slug'\n    filterset_fields = ['name', 'status']\nclass IncomeViewsets(ModelViewSet):\n    queryset =  Income.objects.all()\n    serializer_class = IncomeSerializer\n    permission_classes= [AllowAny]",
         "detail": "finance.views",
         "documentation": {}
     },
@@ -1105,7 +1105,7 @@
         "kind": 6,
         "importPath": "finance.views",
         "description": "finance.views",
-        "peekOfCode": "class IncomeViewsets(ModelViewSet):\n    queryset =  Income.objects.all()\n    serializer_class = IncomeSerializer\n    permission_classes= [AllowAny]\n    lookup_field = 'slug'\n\"\"\" API \"\"\"\nclass ExpensesAPIViewsets(ModelViewSet):\n    queryset =  Expenses.objects.all()\n    serializer_class = ExpensesAPISerializer\n    permission_classes = [AllowAny]",
+        "peekOfCode": "class IncomeViewsets(ModelViewSet):\n    queryset =  Income.objects.all()\n    serializer_class = IncomeSerializer\n    permission_classes= [AllowAny]\n    lookup_field = 'slug'\n    filterset_fields = ['name', 'status', 'amount', 'area__name', 'branch__name']\n\"\"\" API \"\"\"\nclass ExpensesAPIViewsets(ModelViewSet):\n    queryset =  Expenses.objects.all()\n    serializer_class = ExpensesAPISerializer",
         "detail": "finance.views",
         "documentation": {}
     },
@@ -1321,7 +1321,7 @@
         "kind": 6,
         "importPath": "mainapp.views",
         "description": "mainapp.views",
-        "peekOfCode": "class RoomViewset(viewsets.ModelViewSet):\n    queryset = Room.objects.all()\n    serializer_class = RoomSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n    filter_backends = [filters.SearchFilter] # qidiruv parametrlari \n    search_fields = ['name', 'adress'] # qidiruv parametrlari\n    def create(self, request, *args, **kwargs):\n        request_data = request.data\n        try:",
+        "peekOfCode": "class RoomViewset(viewsets.ModelViewSet):\n    queryset = Room.objects.all()\n    serializer_class = RoomSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n    filter_backends = [filters.SearchFilter] # qidiruv parametrlari \n    search_fields = ['number', 'capacity'] # qidiruv parametrlari\n    def create(self, request, *args, **kwargs):\n        request_data = request.data\n        try:",
         "detail": "mainapp.views",
         "documentation": {}
     },
@@ -1330,7 +1330,7 @@
         "kind": 6,
         "importPath": "mainapp.views",
         "description": "mainapp.views",
-        "peekOfCode": "class Groupviewset(viewsets.ModelViewSet):\n    queryset = Group.objects.all()\n    serializer_class = GroupSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n\"\"\" API \"\"\"\nclass BranchAPIListview(ListAPIView):\n    queryset = Branch.objects.filter(status=True)\n    serializer_class = BranchAPISerializer\n    permission_classes = [AllowAny]",
+        "peekOfCode": "class Groupviewset(viewsets.ModelViewSet):\n    queryset = Group.objects.all()\n    serializer_class = GroupSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n    filterset_fields = ['name', 'status']\n\"\"\" API \"\"\"\nclass BranchAPIListview(ListAPIView):\n    queryset = Branch.objects.filter(status=True)\n    serializer_class = BranchAPISerializer",
         "detail": "mainapp.views",
         "documentation": {}
     },
@@ -1564,7 +1564,7 @@
         "kind": 5,
         "importPath": "userapp.urls",
         "description": "userapp.urls",
-        "peekOfCode": "router = DefaultRouter()\nrouter.register(r'field', FieldViewset)\nrouter.register(r'role', RoleViewset)\nrouter.register(r'worker', WorkerViewset)\nrouter.register(r'student', StudentViewset)\nrouter.register(r'field-api', FieldAPIViewset)\nrouter.register(r'role-api', RoleAPIViewset)\nrouter.register(r'worker-api', WorkerAPIViewset)\nrouter.register(r'student-api', StudentAPIViewset)\nurlpatterns = [",
+        "peekOfCode": "router = DefaultRouter()\nrouter.register(r'field', FieldViewset, 'fieldset')\nrouter.register(r'role', RoleViewset, 'role')\nrouter.register(r'worker', WorkerViewset, 'worker')\nrouter.register(r'student', StudentViewset, 'student')\nrouter.register(r'field-api', FieldAPIViewset, 'field-api')\nrouter.register(r'role-api', RoleAPIViewset, 'role-api')\nrouter.register(r'worker-api', WorkerAPIViewset, 'worker-api')\nrouter.register(r'student-api', StudentAPIViewset, 'student-api')\nurlpatterns = [",
         "detail": "userapp.urls",
         "documentation": {}
     },
@@ -1582,7 +1582,7 @@
         "kind": 6,
         "importPath": "userapp.views",
         "description": "userapp.views",
-        "peekOfCode": "class FieldViewset(ModelViewSet):\n    queryset = Field.objects.all()\n    serializer_class = FieldSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass RoleViewset(ModelViewSet):\n    queryset = Role.objects.all()\n    serializer_class = RoleSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
+        "peekOfCode": "class FieldViewset(ModelViewSet):\n    queryset = Field.objects.all()\n    serializer_class = FieldSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n    filterset_fields = ['name', 'status', 'students__full_name']\nclass RoleViewset(ModelViewSet):\n    queryset = Role.objects.all()\n    serializer_class = RoleSerializer\n    permission_classes = [AllowAny]",
         "detail": "userapp.views",
         "documentation": {}
     },
@@ -1591,7 +1591,7 @@
         "kind": 6,
         "importPath": "userapp.views",
         "description": "userapp.views",
-        "peekOfCode": "class RoleViewset(ModelViewSet):\n    queryset = Role.objects.all()\n    serializer_class = RoleSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass WorkerViewset(ModelViewSet):\n    queryset = Worker.objects.all()\n    serializer_class = WorkerSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
+        "peekOfCode": "class RoleViewset(ModelViewSet):\n    queryset = Role.objects.all()\n    serializer_class = RoleSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n    filterset_fields = ['name', 'status']\nclass WorkerViewset(ModelViewSet):\n    queryset = Worker.objects.all()\n    serializer_class = WorkerSerializer\n    permission_classes = [AllowAny]",
         "detail": "userapp.views",
         "documentation": {}
     },
@@ -1600,7 +1600,7 @@
         "kind": 6,
         "importPath": "userapp.views",
         "description": "userapp.views",
-        "peekOfCode": "class WorkerViewset(ModelViewSet):\n    queryset = Worker.objects.all()\n    serializer_class = WorkerSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass StudentViewset(ModelViewSet):\n    queryset = Student.objects.all()\n    serializer_class = StudentSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
+        "peekOfCode": "class WorkerViewset(ModelViewSet):\n    queryset = Worker.objects.all()\n    serializer_class = WorkerSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n    filterset_fields = ['full_name', 'status']\nclass StudentViewset(ModelViewSet):\n    queryset = Student.objects.all()\n    serializer_class = StudentSerializer\n    permission_classes = [AllowAny]",
         "detail": "userapp.views",
         "documentation": {}
     },
@@ -1609,7 +1609,7 @@
         "kind": 6,
         "importPath": "userapp.views",
         "description": "userapp.views",
-        "peekOfCode": "class StudentViewset(ModelViewSet):\n    queryset = Student.objects.all()\n    serializer_class = StudentSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n\"\"\" API \"\"\"\nclass FieldAPIViewset(ModelViewSet):\n    queryset = Field.objects.all()\n    serializer_class = FieldAPISerializer\n    permission_classes = [AllowAny]",
+        "peekOfCode": "class StudentViewset(ModelViewSet):\n    queryset = Student.objects.all()\n    serializer_class = StudentSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n    filterset_fields = ['full_name', 'time', 'day', 'phone_number', 'father_name', 'status']\n\"\"\" API \"\"\"\nclass FieldAPIViewset(ModelViewSet):\n    queryset = Field.objects.filter(status=True)\n    serializer_class = FieldAPISerializer",
         "detail": "userapp.views",
         "documentation": {}
     },
@@ -1618,7 +1618,7 @@
         "kind": 6,
         "importPath": "userapp.views",
         "description": "userapp.views",
-        "peekOfCode": "class FieldAPIViewset(ModelViewSet):\n    queryset = Field.objects.all()\n    serializer_class = FieldAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass RoleAPIViewset(ModelViewSet):\n    queryset = Role.objects.all()\n    serializer_class = RoleAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
+        "peekOfCode": "class FieldAPIViewset(ModelViewSet):\n    queryset = Field.objects.filter(status=True)\n    serializer_class = FieldAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass RoleAPIViewset(ModelViewSet):\n    queryset = Role.objects.filter(status=True)\n    serializer_class = RoleAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
         "detail": "userapp.views",
         "documentation": {}
     },
@@ -1627,7 +1627,7 @@
         "kind": 6,
         "importPath": "userapp.views",
         "description": "userapp.views",
-        "peekOfCode": "class RoleAPIViewset(ModelViewSet):\n    queryset = Role.objects.all()\n    serializer_class = RoleAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass WorkerAPIViewset(ModelViewSet):\n    queryset = Worker.objects.all()\n    serializer_class = WorkerAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
+        "peekOfCode": "class RoleAPIViewset(ModelViewSet):\n    queryset = Role.objects.filter(status=True)\n    serializer_class = RoleAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass WorkerAPIViewset(ModelViewSet):\n    queryset = Worker.objects.filter(status=True)\n    serializer_class = WorkerAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
         "detail": "userapp.views",
         "documentation": {}
     },
@@ -1636,7 +1636,7 @@
         "kind": 6,
         "importPath": "userapp.views",
         "description": "userapp.views",
-        "peekOfCode": "class WorkerAPIViewset(ModelViewSet):\n    queryset = Worker.objects.all()\n    serializer_class = WorkerAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass StudentAPIViewset(ModelViewSet):\n    queryset = Student.objects.all()\n    serializer_class = StudentAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
+        "peekOfCode": "class WorkerAPIViewset(ModelViewSet):\n    queryset = Worker.objects.filter(status=True)\n    serializer_class = WorkerAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass StudentAPIViewset(ModelViewSet):\n    queryset = Student.objects.filter(status=True)\n    serializer_class = StudentAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
         "detail": "userapp.views",
         "documentation": {}
     },
@@ -1645,7 +1645,7 @@
         "kind": 6,
         "importPath": "userapp.views",
         "description": "userapp.views",
-        "peekOfCode": "class StudentAPIViewset(ModelViewSet):\n    queryset = Student.objects.all()\n    serializer_class = StudentAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
+        "peekOfCode": "class StudentAPIViewset(ModelViewSet):\n    queryset = Student.objects.filter(status=True)\n    serializer_class = StudentAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
         "detail": "userapp.views",
         "documentation": {}
     },
