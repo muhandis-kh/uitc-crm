@@ -644,6 +644,14 @@
         "documentation": {}
     },
     {
+        "label": "DjangoFilterBackend",
+        "importPath": "django_filters.rest_framework",
+        "description": "django_filters.rest_framework",
+        "isExtraImport": true,
+        "detail": "django_filters.rest_framework",
+        "documentation": {}
+    },
+    {
         "label": "django.core.validators",
         "kind": 6,
         "isExtraImport": true,
@@ -1304,7 +1312,7 @@
         "kind": 6,
         "importPath": "mainapp.views",
         "description": "mainapp.views",
-        "peekOfCode": "class BranchViewset(viewsets.ModelViewSet):\n    queryset = Branch.objects.all()\n    serializer_class = BranchSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n    filter_backends = [filters.SearchFilter]\n    filterset_fields = ['status','name', 'id']\n    search_fields = ['name', 'adress']\n    \"\"\" CRUD functions \"\"\"\n    def create(self, request, *args, **kwargs):",
+        "peekOfCode": "class BranchViewset(viewsets.ModelViewSet):\n    queryset = Branch.objects.all()\n    serializer_class = BranchSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n    filter_backends = [DjangoFilterBackend] # filter oqrali saralash uchun parametrlar\n    filterset_fields = ['status','name', 'id'] # filter oqrali saralash uchun parametrlar\n    \"\"\" CRUD functions \"\"\"\n    def create(self, request, *args, **kwargs):\n        try:",
         "detail": "mainapp.views",
         "documentation": {}
     },
@@ -1313,7 +1321,7 @@
         "kind": 6,
         "importPath": "mainapp.views",
         "description": "mainapp.views",
-        "peekOfCode": "class RoomViewset(viewsets.ModelViewSet):\n    queryset = Room.objects.all()\n    serializer_class = RoomSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n    def create(self, request, *args, **kwargs):\n        request_data = request.data\n        try:\n            branch = Branch.objects.get(id=int(request_data['branch']))\n        except:",
+        "peekOfCode": "class RoomViewset(viewsets.ModelViewSet):\n    queryset = Room.objects.all()\n    serializer_class = RoomSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n    filter_backends = [filters.SearchFilter] # qidiruv parametrlari \n    search_fields = ['name', 'adress'] # qidiruv parametrlari\n    def create(self, request, *args, **kwargs):\n        request_data = request.data\n        try:",
         "detail": "mainapp.views",
         "documentation": {}
     },

@@ -13,14 +13,14 @@ from .serializers import BranchSerializer, RoomSerializer, GroupSerializer,\
 
 # Create your views here.
 """ CRUD API  """
+from django_filters.rest_framework import DjangoFilterBackend
 class BranchViewset(viewsets.ModelViewSet):
     queryset = Branch.objects.all()
     serializer_class = BranchSerializer
     permission_classes = [AllowAny]
     lookup_field = 'slug'
-    filter_backends = [filters.SearchFilter]
-    filterset_fields = ['status','name', 'id']
-    search_fields = ['name', 'adress']
+    filter_backends = [DjangoFilterBackend] # filter oqrali saralash uchun parametrlar
+    filterset_fields = ['status','name', 'id'] # filter oqrali saralash uchun parametrlar
 
     """ CRUD functions """
     def create(self, request, *args, **kwargs):
@@ -76,6 +76,9 @@ class RoomViewset(viewsets.ModelViewSet):
     serializer_class = RoomSerializer
     permission_classes = [AllowAny]
     lookup_field = 'slug'
+    filter_backends = [filters.SearchFilter] # qidiruv parametrlari 
+    search_fields = ['name', 'adress'] # qidiruv parametrlari
+
 
     def create(self, request, *args, **kwargs):
         request_data = request.data
