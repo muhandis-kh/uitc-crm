@@ -6,7 +6,7 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.generics import ListAPIView, RetrieveAPIView
-
+from rest_framework import filters
 from .models import Branch, Room, Group
 from .serializers import BranchSerializer, RoomSerializer, GroupSerializer,\
     BranchAPISerializer, RoomAPISerializer, GroupAPISerializer
@@ -18,7 +18,9 @@ class BranchViewset(viewsets.ModelViewSet):
     serializer_class = BranchSerializer
     permission_classes = [AllowAny]
     lookup_field = 'slug'
+    filter_backends = [filters.SearchFilter]
     filterset_fields = ['status','name', 'id']
+    search_fields = ['name', 'adress']
 
     """ CRUD functions """
     def create(self, request, *args, **kwargs):

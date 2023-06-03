@@ -169,6 +169,14 @@
         "documentation": {}
     },
     {
+        "label": "filters",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
         "label": "serializers",
         "importPath": "rest_framework",
         "description": "rest_framework",
@@ -1296,7 +1304,7 @@
         "kind": 6,
         "importPath": "mainapp.views",
         "description": "mainapp.views",
-        "peekOfCode": "class BranchViewset(viewsets.ModelViewSet):\n    queryset = Branch.objects.all()\n    serializer_class = BranchSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n    filterset_fields = ['status','name', 'id']\n    \"\"\" CRUD functions \"\"\"\n    def create(self, request, *args, **kwargs):\n        try:\n            data = request.data",
+        "peekOfCode": "class BranchViewset(viewsets.ModelViewSet):\n    queryset = Branch.objects.all()\n    serializer_class = BranchSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n    filter_backends = [filters.SearchFilter]\n    filterset_fields = ['status','name', 'id']\n    search_fields = ['name', 'adress']\n    \"\"\" CRUD functions \"\"\"\n    def create(self, request, *args, **kwargs):",
         "detail": "mainapp.views",
         "documentation": {}
     },
