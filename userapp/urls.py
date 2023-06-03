@@ -1,24 +1,20 @@
 from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from .views import FieldViewset, RoleViewset, WorkerViewset, StudentViewset, \
+    FieldAPIViewset, RoleAPIViewset, WorkerAPIViewset, StudentAPIViewset
 
-from rest_framework import routers
+router = DefaultRouter()
+router.register(r'field', FieldViewset)
+router.register(r'role', RoleViewset)
+router.register(r'worker', WorkerViewset)
+router.register(r'student', StudentViewset)
 
-from .views import (FieldViewset, RoleViewset, StudentDetailview, StudentListview, StudentViewset, WorkerDetailview,
-    WorkerListview, WorkerViewset)
-
-
-router = routers.DefaultRouter()
-router.register(r'worker', WorkerViewset, 'worker')
-router.register(r'field', FieldViewset, 'field')
-router.register(r'student', StudentViewset, 'student')
-router.register(r'role', RoleViewset, 'role')
-
+router.register(r'field-api', FieldAPIViewset)
+router.register(r'role-api', RoleAPIViewset)
+router.register(r'worker-api', WorkerAPIViewset)
+router.register(r'student-api', StudentAPIViewset)
 
 urlpatterns = [
-    path('', include(router.urls)),
-    path('worker-api/<slug:slug>', WorkerDetailview.as_view()),
-    path('worker-api', WorkerListview.as_view()),
-    path('student-api/<slug:slug>', StudentDetailview.as_view()),
-    path('student-api', StudentListview.as_view()),
+    path('', include(router.urls))
 ]
-
 

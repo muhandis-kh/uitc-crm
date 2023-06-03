@@ -1,7 +1,6 @@
 from django.db import models
-
 from autoslug import AutoSlugField
-
+    
 from userapp.models import Student
 from mainapp.models import Branch, Group
 

@@ -1,15 +1,21 @@
 from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from .views import ExpensesViewsets, PaymentViewsets, AreaViewsets, \
+    IncomeViewsets,ExpensesAPIViewsets, PaymentAPIViewsets, AreaAPIViewsets, \
+        IncomeAPIViewsets
 
-from rest_framework import routers
+router = DefaultRouter()
+router.register(r'expenses', ExpensesViewsets)
+router.register(r'payment', PaymentViewsets)
+router.register(r'area', AreaViewsets)
+router.register(r'income', IncomeViewsets)
 
-from .views import ExpencesViewSet, PaymentViewSet, AreaViewSet, IncomeViewSet
-
-router = routers.DefaultRouter()
-router.register(r'expences', ExpencesViewSet)
-router.register(r'payment', PaymentViewSet)
-router.register(r'area', AreaViewSet)
-router.register(r'Income', IncomeViewSet)
+router.register(r'expenses-api', ExpensesAPIViewsets)
+router.register(r'payment-api', PaymentAPIViewsets)
+router.register(r'area-api', AreaAPIViewsets)
+router.register(r'income-api', IncomeAPIViewsets)
 
 urlpatterns = [
-    path('', include(router.urls))
+    path('', include(router.urls)),
 ]
+

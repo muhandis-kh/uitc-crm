@@ -121,6 +121,78 @@
         "documentation": {}
     },
     {
+        "label": "permissions",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "routers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "get_schema_view",
+        "importPath": "drf_yasg.views",
+        "description": "drf_yasg.views",
+        "isExtraImport": true,
+        "detail": "drf_yasg.views",
+        "documentation": {}
+    },
+    {
+        "label": "openapi",
+        "importPath": "drf_yasg",
+        "description": "drf_yasg",
+        "isExtraImport": true,
+        "detail": "drf_yasg",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -177,6 +249,22 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -194,14 +282,6 @@
     },
     {
         "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -364,11 +444,11 @@
         "documentation": {}
     },
     {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
+        "label": "ModelSerializer",
+        "importPath": "rest_framework.serializers",
+        "description": "rest_framework.serializers",
         "isExtraImport": true,
-        "detail": "django.test",
+        "detail": "rest_framework.serializers",
         "documentation": {}
     },
     {
@@ -388,75 +468,27 @@
         "documentation": {}
     },
     {
-        "label": "routers",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
         "isExtraImport": true,
-        "detail": "rest_framework",
+        "detail": "django.test",
         "documentation": {}
     },
     {
-        "label": "serializers",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
+        "label": "DefaultRouter",
+        "importPath": "rest_framework.routers",
+        "description": "rest_framework.routers",
         "isExtraImport": true,
-        "detail": "rest_framework",
+        "detail": "rest_framework.routers",
         "documentation": {}
     },
     {
-        "label": "routers",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
+        "label": "DefaultRouter",
+        "importPath": "rest_framework.routers",
+        "description": "rest_framework.routers",
         "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "status",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "viewsets",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "serializers",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "routers",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "status",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
-        "documentation": {}
-    },
-    {
-        "label": "viewsets",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
+        "detail": "rest_framework.routers",
         "documentation": {}
     },
     {
@@ -468,43 +500,19 @@
         "documentation": {}
     },
     {
-        "label": "AllowAny",
-        "importPath": "rest_framework.permissions",
-        "description": "rest_framework.permissions",
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
         "isExtraImport": true,
-        "detail": "rest_framework.permissions",
+        "detail": "django.shortcuts",
         "documentation": {}
     },
     {
-        "label": "AllowAny",
-        "importPath": "rest_framework.permissions",
-        "description": "rest_framework.permissions",
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
         "isExtraImport": true,
-        "detail": "rest_framework.permissions",
-        "documentation": {}
-    },
-    {
-        "label": "IsAuthenticated",
-        "importPath": "rest_framework.permissions",
-        "description": "rest_framework.permissions",
-        "isExtraImport": true,
-        "detail": "rest_framework.permissions",
-        "documentation": {}
-    },
-    {
-        "label": "AllowAny",
-        "importPath": "rest_framework.permissions",
-        "description": "rest_framework.permissions",
-        "isExtraImport": true,
-        "detail": "rest_framework.permissions",
-        "documentation": {}
-    },
-    {
-        "label": "IsAuthenticated",
-        "importPath": "rest_framework.permissions",
-        "description": "rest_framework.permissions",
-        "isExtraImport": true,
-        "detail": "rest_framework.permissions",
+        "detail": "django.shortcuts",
         "documentation": {}
     },
     {
@@ -516,11 +524,91 @@
         "documentation": {}
     },
     {
-        "label": "Response",
-        "importPath": "rest_framework.response",
-        "description": "rest_framework.response",
+        "label": "ModelViewSet",
+        "importPath": "rest_framework.viewsets",
+        "description": "rest_framework.viewsets",
         "isExtraImport": true,
-        "detail": "rest_framework.response",
+        "detail": "rest_framework.viewsets",
+        "documentation": {}
+    },
+    {
+        "label": "AllowAny",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "AllowAny",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "AllowAny",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "ExpensesAPISerializer",
+        "importPath": "finance.serializers",
+        "description": "finance.serializers",
+        "isExtraImport": true,
+        "detail": "finance.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "PaymentAPISerializer",
+        "importPath": "finance.serializers",
+        "description": "finance.serializers",
+        "isExtraImport": true,
+        "detail": "finance.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "\\",
+        "importPath": "finance.serializers",
+        "description": "finance.serializers",
+        "isExtraImport": true,
+        "detail": "finance.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "pprint",
+        "importPath": "pprint",
+        "description": "pprint",
+        "isExtraImport": true,
+        "detail": "pprint",
         "documentation": {}
     },
     {
@@ -529,22 +617,6 @@
         "description": "rest_framework.response",
         "isExtraImport": true,
         "detail": "rest_framework.response",
-        "documentation": {}
-    },
-    {
-        "label": "ListAPIView",
-        "importPath": "rest_framework.generics",
-        "description": "rest_framework.generics",
-        "isExtraImport": true,
-        "detail": "rest_framework.generics",
-        "documentation": {}
-    },
-    {
-        "label": "RetrieveAPIView",
-        "importPath": "rest_framework.generics",
-        "description": "rest_framework.generics",
-        "isExtraImport": true,
-        "detail": "rest_framework.generics",
         "documentation": {}
     },
     {
@@ -639,7 +711,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n    # global apps\n    'rest_framework',\n    # local apps",
+        "peekOfCode": "INSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n    # global apps\n    'rest_framework',\n    'drf_yasg',",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -747,7 +819,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\n\"\"\" Rest framework settings \"\"\"\nREST_FRAMEWORK = {\n    # Use Django's standard `django.contrib.auth` permissions,\n    # or allow read-only access for unauthenticated users.\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.AllowAny'\n    ]\n}",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\n\"\"\" Rest framework settings \"\"\"\nREST_FRAMEWORK = {\n    # Use Django's standard `django.contrib.auth` permissions,\n    # or allow read-only access for unauthenticated users.\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.AllowAny'\n    ],\n    'DEFAULT_FILTER_BACKENDS': [\n        'django_filters.rest_framework.DjangoFilterBackend'",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -756,8 +828,17 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "REST_FRAMEWORK = {\n    # Use Django's standard `django.contrib.auth` permissions,\n    # or allow read-only access for unauthenticated users.\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.AllowAny'\n    ]\n}",
+        "peekOfCode": "REST_FRAMEWORK = {\n    # Use Django's standard `django.contrib.auth` permissions,\n    # or allow read-only access for unauthenticated users.\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.AllowAny'\n    ],\n    'DEFAULT_FILTER_BACKENDS': [\n        'django_filters.rest_framework.DjangoFilterBackend'\n    ]\n}",
         "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "schema_view",
+        "kind": 5,
+        "importPath": "config.urls",
+        "description": "config.urls",
+        "peekOfCode": "schema_view = get_schema_view(\n   openapi.Info(\n      title=\"Snippets API\",\n      default_version='v1',\n      description=\"Test description\",\n      terms_of_service=\"https://www.google.com/policies/terms/\",\n      contact=openapi.Contact(email=\"contact@snippets.local\"),\n      license=openapi.License(name=\"BSD License\"),\n   ),\n   public=True,",
+        "detail": "config.urls",
         "documentation": {}
     },
     {
@@ -765,7 +846,7 @@
         "kind": 5,
         "importPath": "config.urls",
         "description": "config.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path('api-auth/', include('rest_framework.urls')),\n    path('mainapp/', include('mainapp.urls')),\n    path('userapp/', include('userapp.urls')),\n    path('finance/', include('finance.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path('api-auth/', include('rest_framework.urls')),\n    path('mainapp/', include('mainapp.urls')),\n    path('userapp/', include('userapp.urls')),\n    path('finance/', include('finance.urls')),\n    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),\n    path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),\n]",
         "detail": "config.urls",
         "documentation": {}
     },
@@ -909,7 +990,7 @@
         "kind": 6,
         "importPath": "finance.serializers",
         "description": "finance.serializers",
-        "peekOfCode": "class AreaSerializer(ModelSerializer):\n    class Meta:\n        model = Area\n        fields = ('__all__')\nclass IncomeSerializer(ModelSerializer):\n    class Meta:\n        model = Income\n        fields = ('__all__')",
+        "peekOfCode": "class AreaSerializer(ModelSerializer):\n    class Meta:\n        model = Area\n        fields = ('__all__')\nclass IncomeSerializer(ModelSerializer):\n    class Meta:\n        model = Income\n        fields = ('__all__')\n\"\"\" API \"\"\"\nclass ExpensesAPISerializer(ModelSerializer):",
         "detail": "finance.serializers",
         "documentation": {}
     },
@@ -918,7 +999,43 @@
         "kind": 6,
         "importPath": "finance.serializers",
         "description": "finance.serializers",
-        "peekOfCode": "class IncomeSerializer(ModelSerializer):\n    class Meta:\n        model = Income\n        fields = ('__all__')",
+        "peekOfCode": "class IncomeSerializer(ModelSerializer):\n    class Meta:\n        model = Income\n        fields = ('__all__')\n\"\"\" API \"\"\"\nclass ExpensesAPISerializer(ModelSerializer):\n    branch_name = serializers.CharField(source='branch.name')\n    branch_slug = serializers.CharField(source='branch.slug')\n    class Meta:\n        model = Expenses",
+        "detail": "finance.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ExpensesAPISerializer",
+        "kind": 6,
+        "importPath": "finance.serializers",
+        "description": "finance.serializers",
+        "peekOfCode": "class ExpensesAPISerializer(ModelSerializer):\n    branch_name = serializers.CharField(source='branch.name')\n    branch_slug = serializers.CharField(source='branch.slug')\n    class Meta:\n        model = Expenses\n        fields = ('id', 'name', 'slug', 'amount', 'comment',\\\n                  'branch', 'branch_name', 'branch_slug')\nclass PaymentAPISerializer(ModelSerializer):\n    branch_name = serializers.CharField(source='branch.name')\n    branch_slug = serializers.CharField(source='branch.slug')",
+        "detail": "finance.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "PaymentAPISerializer",
+        "kind": 6,
+        "importPath": "finance.serializers",
+        "description": "finance.serializers",
+        "peekOfCode": "class PaymentAPISerializer(ModelSerializer):\n    branch_name = serializers.CharField(source='branch.name')\n    branch_slug = serializers.CharField(source='branch.slug')\n    group_name = serializers.CharField(source='group.name')\n    group_slug = serializers.CharField(source='group.slug')\n    student_name = serializers.CharField(source='student.full_name')\n    student_slug = serializers.CharField(source='student.slug')\n    class Meta:\n        model = Payment\n        fields = ('id', 'month', 'amount', ",
+        "detail": "finance.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "IncomeAPISerializer",
+        "kind": 6,
+        "importPath": "finance.serializers",
+        "description": "finance.serializers",
+        "peekOfCode": "class IncomeAPISerializer(ModelSerializer):\n    branch_name = serializers.CharField(source='branch.name')\n    branch_slug = serializers.CharField(source='branch.slug')\n    area_name = serializers.CharField(source='area.name')\n    area_slug = serializers.CharField(source='area.slug')\n    class Meta:\n        model = Income\n        fields = ('id', 'name', 'amount', 'comment', \n                    'branch', 'branch_name', 'branch_slug',\n                    'area', 'area_name', 'area_slug',",
+        "detail": "finance.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "AreaAPISerializer",
+        "kind": 6,
+        "importPath": "finance.serializers",
+        "description": "finance.serializers",
+        "peekOfCode": "class AreaAPISerializer(ModelSerializer):\n    incoms = IncomeAPISerializer(many=True, read_only=True)\n    class Meta:\n        model = Area\n        fields = ('id', 'name', 'slug', 'incoms')",
         "detail": "finance.serializers",
         "documentation": {}
     },
@@ -927,7 +1044,7 @@
         "kind": 5,
         "importPath": "finance.urls",
         "description": "finance.urls",
-        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register(r'expences', ExpencesViewSet)\nrouter.register(r'payment', PaymentViewSet)\nrouter.register(r'area', AreaViewSet)\nrouter.register(r'Income', IncomeViewSet)\nurlpatterns = [\n    path('', include(router.urls))\n]",
+        "peekOfCode": "router = DefaultRouter()\nrouter.register(r'expenses', ExpensesViewsets)\nrouter.register(r'payment', PaymentViewsets)\nrouter.register(r'area', AreaViewsets)\nrouter.register(r'income', IncomeViewsets)\nrouter.register(r'expenses-api', ExpensesAPIViewsets)\nrouter.register(r'payment-api', PaymentAPIViewsets)\nrouter.register(r'area-api', AreaAPIViewsets)\nrouter.register(r'income-api', IncomeAPIViewsets)\nurlpatterns = [",
         "detail": "finance.urls",
         "documentation": {}
     },
@@ -936,43 +1053,79 @@
         "kind": 5,
         "importPath": "finance.urls",
         "description": "finance.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', include(router.urls))\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', include(router.urls)),\n]",
         "detail": "finance.urls",
         "documentation": {}
     },
     {
-        "label": "ExpencesViewSet",
+        "label": "ExpensesViewsets",
         "kind": 6,
         "importPath": "finance.views",
         "description": "finance.views",
-        "peekOfCode": "class ExpencesViewSet(ModelViewSet):\n    queryset = Expenses.objects.all()\n    serializer_class = ExpensesSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass PaymentViewSet(ModelViewSet):\n    queryset = Payment.objects.all()\n    serializer_class = PaymentSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
+        "peekOfCode": "class ExpensesViewsets(ModelViewSet):\n    queryset =  Expenses.objects.all()\n    serializer_class = ExpensesSerializer\n    permission_classes= [AllowAny]\n    lookup_field = 'slug'\nclass PaymentViewsets(ModelViewSet):\n    queryset =  Payment.objects.all()\n    serializer_class = PaymentSerializer\n    permission_classes= [AllowAny]\nclass AreaViewsets(ModelViewSet):",
         "detail": "finance.views",
         "documentation": {}
     },
     {
-        "label": "PaymentViewSet",
+        "label": "PaymentViewsets",
         "kind": 6,
         "importPath": "finance.views",
         "description": "finance.views",
-        "peekOfCode": "class PaymentViewSet(ModelViewSet):\n    queryset = Payment.objects.all()\n    serializer_class = PaymentSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass AreaViewSet(ModelViewSet):\n    queryset = Area.objects.all()\n    serializer_class = AreaSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
+        "peekOfCode": "class PaymentViewsets(ModelViewSet):\n    queryset =  Payment.objects.all()\n    serializer_class = PaymentSerializer\n    permission_classes= [AllowAny]\nclass AreaViewsets(ModelViewSet):\n    queryset =  Area.objects.all()\n    serializer_class = AreaSerializer\n    permission_classes= [AllowAny]\n    lookup_field = 'slug'\nclass IncomeViewsets(ModelViewSet):",
         "detail": "finance.views",
         "documentation": {}
     },
     {
-        "label": "AreaViewSet",
+        "label": "AreaViewsets",
         "kind": 6,
         "importPath": "finance.views",
         "description": "finance.views",
-        "peekOfCode": "class AreaViewSet(ModelViewSet):\n    queryset = Area.objects.all()\n    serializer_class = AreaSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass IncomeViewSet(ModelViewSet):\n    queryset = Income.objects.all()\n    serializer_class = IncomeSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
+        "peekOfCode": "class AreaViewsets(ModelViewSet):\n    queryset =  Area.objects.all()\n    serializer_class = AreaSerializer\n    permission_classes= [AllowAny]\n    lookup_field = 'slug'\nclass IncomeViewsets(ModelViewSet):\n    queryset =  Income.objects.all()\n    serializer_class = IncomeSerializer\n    permission_classes= [AllowAny]\n    lookup_field = 'slug'",
         "detail": "finance.views",
         "documentation": {}
     },
     {
-        "label": "IncomeViewSet",
+        "label": "IncomeViewsets",
         "kind": 6,
         "importPath": "finance.views",
         "description": "finance.views",
-        "peekOfCode": "class IncomeViewSet(ModelViewSet):\n    queryset = Income.objects.all()\n    serializer_class = IncomeSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
+        "peekOfCode": "class IncomeViewsets(ModelViewSet):\n    queryset =  Income.objects.all()\n    serializer_class = IncomeSerializer\n    permission_classes= [AllowAny]\n    lookup_field = 'slug'\n\"\"\" API \"\"\"\nclass ExpensesAPIViewsets(ModelViewSet):\n    queryset =  Expenses.objects.all()\n    serializer_class = ExpensesAPISerializer\n    permission_classes = [AllowAny]",
+        "detail": "finance.views",
+        "documentation": {}
+    },
+    {
+        "label": "ExpensesAPIViewsets",
+        "kind": 6,
+        "importPath": "finance.views",
+        "description": "finance.views",
+        "peekOfCode": "class ExpensesAPIViewsets(ModelViewSet):\n    queryset =  Expenses.objects.all()\n    serializer_class = ExpensesAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass PaymentAPIViewsets(ModelViewSet):\n    queryset =  Payment.objects.all()\n    serializer_class = PaymentAPISerializer\n    permission_classes= [AllowAny]\nclass AreaAPIViewsets(ModelViewSet):",
+        "detail": "finance.views",
+        "documentation": {}
+    },
+    {
+        "label": "PaymentAPIViewsets",
+        "kind": 6,
+        "importPath": "finance.views",
+        "description": "finance.views",
+        "peekOfCode": "class PaymentAPIViewsets(ModelViewSet):\n    queryset =  Payment.objects.all()\n    serializer_class = PaymentAPISerializer\n    permission_classes= [AllowAny]\nclass AreaAPIViewsets(ModelViewSet):\n    queryset =  Area.objects.all()\n    serializer_class = AreaAPISerializer\n    permission_classes= [AllowAny]\n    lookup_field = 'slug'\nclass IncomeAPIViewsets(ModelViewSet):",
+        "detail": "finance.views",
+        "documentation": {}
+    },
+    {
+        "label": "AreaAPIViewsets",
+        "kind": 6,
+        "importPath": "finance.views",
+        "description": "finance.views",
+        "peekOfCode": "class AreaAPIViewsets(ModelViewSet):\n    queryset =  Area.objects.all()\n    serializer_class = AreaAPISerializer\n    permission_classes= [AllowAny]\n    lookup_field = 'slug'\nclass IncomeAPIViewsets(ModelViewSet):\n    queryset =  Income.objects.all()\n    serializer_class = IncomeAPISerializer\n    permission_classes= [AllowAny]\n    lookup_field = 'slug'",
+        "detail": "finance.views",
+        "documentation": {}
+    },
+    {
+        "label": "IncomeAPIViewsets",
+        "kind": 6,
+        "importPath": "finance.views",
+        "description": "finance.views",
+        "peekOfCode": "class IncomeAPIViewsets(ModelViewSet):\n    queryset =  Income.objects.all()\n    serializer_class = IncomeAPISerializer\n    permission_classes= [AllowAny]\n    lookup_field = 'slug'",
         "detail": "finance.views",
         "documentation": {}
     },
@@ -983,6 +1136,15 @@
         "description": "mainapp.migrations.0001_initial",
         "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        (\"userapp\", \"__first__\"),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name=\"Branch\",\n            fields=[\n                (",
         "detail": "mainapp.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "mainapp.migrations.0002_alter_room_branch",
+        "description": "mainapp.migrations.0002_alter_room_branch",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        (\"mainapp\", \"0001_initial\"),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name=\"room\",\n            name=\"branch\",\n            field=models.ForeignKey(\n                blank=True,",
+        "detail": "mainapp.migrations.0002_alter_room_branch",
         "documentation": {}
     },
     {
@@ -1044,7 +1206,7 @@
         "kind": 6,
         "importPath": "mainapp.models",
         "description": "mainapp.models",
-        "peekOfCode": "class Group(models.Model):\n    field = models.ForeignKey(Field, on_delete=models.CASCADE, \n                              related_name='groups', verbose_name=\"Kurs\")\n    name = models.CharField(max_length=50, verbose_name=\"Nominal\")\n    slug  = AutoSlugField(populate_from=\"name\", unique=True)\n    teacher = models.ForeignKey(Worker, on_delete=models.CASCADE, related_name='groups', \n                                verbose_name=\"O'qituvchi\")\n    students = models.ManyToManyField(Student, related_name=\"students\", \n                                      verbose_name=\"O'quvchilar\")\n    day = models.CharField(max_length=25, choices=DAYS, default='toq')",
+        "peekOfCode": "class Group(models.Model):\n    field = models.ForeignKey(Field, on_delete=models.CASCADE, \n                              related_name='groups', verbose_name=\"Kurs\")\n    name = models.CharField(max_length=50, verbose_name=\"Nomi\")\n    slug  = AutoSlugField(populate_from=\"name\", unique=True)\n    teacher = models.ForeignKey(Worker, on_delete=models.CASCADE, related_name='groups', \n                                verbose_name=\"O'qtuvchi\")\n    students = models.ManyToManyField(Student, related_name=\"students\", \n                                      verbose_name=\"O'quvchilar\")\n    day = models.CharField(max_length=25, choices=DAYS, default='toq')",
         "detail": "mainapp.models",
         "documentation": {}
     },
@@ -1071,7 +1233,7 @@
         "kind": 6,
         "importPath": "mainapp.serializers",
         "description": "mainapp.serializers",
-        "peekOfCode": "class RoomSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Room\n        fields = ('__all__')\nclass GroupSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Group\n        fields  =('__all__')\nclass BranchAPISerializer(serializers.ModelSerializer):\n    class Meta:",
+        "peekOfCode": "class RoomSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Room\n        fields = ('__all__')\nclass GroupSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Group\n        fields  =('__all__')\n\"\"\" API \"\"\"\nclass GroupAPISerializer(serializers.ModelSerializer):",
         "detail": "mainapp.serializers",
         "documentation": {}
     },
@@ -1080,25 +1242,7 @@
         "kind": 6,
         "importPath": "mainapp.serializers",
         "description": "mainapp.serializers",
-        "peekOfCode": "class GroupSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Group\n        fields  =('__all__')\nclass BranchAPISerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Branch\n        fields = ('id', 'name', 'adress', 'slug')\nclass RoomAPISerializer(serializers.ModelSerializer):\n    branch_name = serializers.CharField(source='branch.name')",
-        "detail": "mainapp.serializers",
-        "documentation": {}
-    },
-    {
-        "label": "BranchAPISerializer",
-        "kind": 6,
-        "importPath": "mainapp.serializers",
-        "description": "mainapp.serializers",
-        "peekOfCode": "class BranchAPISerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Branch\n        fields = ('id', 'name', 'adress', 'slug')\nclass RoomAPISerializer(serializers.ModelSerializer):\n    branch_name = serializers.CharField(source='branch.name')\n    # branch_adress = serializers.CharField(source='branch.adress')\n    # branch_status = serializers.BooleanField(source='branch.status')\n    # branch_created_at = serializers.DateTimeField(source='branch.created_at')\n    class Meta:",
-        "detail": "mainapp.serializers",
-        "documentation": {}
-    },
-    {
-        "label": "RoomAPISerializer",
-        "kind": 6,
-        "importPath": "mainapp.serializers",
-        "description": "mainapp.serializers",
-        "peekOfCode": "class RoomAPISerializer(serializers.ModelSerializer):\n    branch_name = serializers.CharField(source='branch.name')\n    # branch_adress = serializers.CharField(source='branch.adress')\n    # branch_status = serializers.BooleanField(source='branch.status')\n    # branch_created_at = serializers.DateTimeField(source='branch.created_at')\n    class Meta:\n        model = Room\n        fields = ('id', 'number', 'capacity', 'branch_name', 'slug')\nclass GroupAPISerializer(serializers.ModelSerializer):\n    branch_name = serializers.CharField(source='branch.name')",
+        "peekOfCode": "class GroupSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Group\n        fields  =('__all__')\n\"\"\" API \"\"\"\nclass GroupAPISerializer(serializers.ModelSerializer):\n    branch_name = serializers.CharField(source='branch.name')\n    branch_slug = serializers.CharField(source='branch.slug')\n    field_name = serializers.CharField(source='field.name')\n    field_slug = serializers.CharField(source='field.slug')",
         "detail": "mainapp.serializers",
         "documentation": {}
     },
@@ -1107,7 +1251,25 @@
         "kind": 6,
         "importPath": "mainapp.serializers",
         "description": "mainapp.serializers",
-        "peekOfCode": "class GroupAPISerializer(serializers.ModelSerializer):\n    branch_name = serializers.CharField(source='branch.name')\n    field_name = serializers.CharField(source='field.name')\n    teacher_name = serializers.CharField(source='teacher.full_name')\n    room = serializers.IntegerField(source='room.number')\n    class Meta:\n        model = Group\n        fields = ('id', 'branch_name', 'field_name', 'name', 'room', 'teacher_name', 'day', 'time', 'slug')",
+        "peekOfCode": "class GroupAPISerializer(serializers.ModelSerializer):\n    branch_name = serializers.CharField(source='branch.name')\n    branch_slug = serializers.CharField(source='branch.slug')\n    field_name = serializers.CharField(source='field.name')\n    field_slug = serializers.CharField(source='field.slug')\n    room_number = serializers.IntegerField(source='room.number')\n    room_slug = serializers.CharField(source='room.slug')\n    teacher_name = serializers.CharField(source='teacher.full_name')\n    teacher_slug = serializers.CharField(source='teacher.slug')\n    payments = PaymentAPISerializer(many=True, read_only=True)",
+        "detail": "mainapp.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "RoomAPISerializer",
+        "kind": 6,
+        "importPath": "mainapp.serializers",
+        "description": "mainapp.serializers",
+        "peekOfCode": "class RoomAPISerializer(serializers.ModelSerializer):\n    branch_name = serializers.CharField(source='branch.name')\n    groups  = GroupAPISerializer(many=True, read_only=True)\n    class Meta:\n        model = Room\n        fields = ('id', 'number', 'capacity', 'branch_name', 'groups')\nclass BranchAPISerializer(serializers.ModelSerializer):\n    groups = GroupAPISerializer(many=True, read_only=True)\n    rooms = RoomAPISerializer(many=True, read_only=True)\n    expenses = ExpensesAPISerializer(many=True, read_only=True)",
+        "detail": "mainapp.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "BranchAPISerializer",
+        "kind": 6,
+        "importPath": "mainapp.serializers",
+        "description": "mainapp.serializers",
+        "peekOfCode": "class BranchAPISerializer(serializers.ModelSerializer):\n    groups = GroupAPISerializer(many=True, read_only=True)\n    rooms = RoomAPISerializer(many=True, read_only=True)\n    expenses = ExpensesAPISerializer(many=True, read_only=True)\n    incoms = IncomeAPISerializer(many=True, read_only=True)\n    payments = PaymentAPISerializer(many=True, read_only=True)\n    class Meta:\n        model = Branch\n        fields = ('id','name','slug','adress','groups','rooms',\n                  'expenses','incoms','payments')",
         "detail": "mainapp.serializers",
         "documentation": {}
     },
@@ -1116,7 +1278,7 @@
         "kind": 5,
         "importPath": "mainapp.urls",
         "description": "mainapp.urls",
-        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register(r'branch', BranchViewset, 'branch')\nrouter.register(r'room', RoomViewset, 'room')\nrouter.register(r'group', GroupViewset, 'group')\nurlpatterns = [\n    path('', include(router.urls)),\n    # path('branch-api/<int:id>/', BranchAPIDetailview.as_view()),\n    path('branch-api/<slug:slug>/', BranchAPIDetailview.as_view()),\n    path('branch-api', BranchAPIListview.as_view()),\n    path('room-api/<slug:slug>/', RoomAPIDetailview.as_view()),",
+        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register(r'branch', BranchViewset, 'branch')\nrouter.register(r'room', RoomViewset, 'room')\nrouter.register(r'group', Groupviewset, 'group')\nurlpatterns = [\n    path('', include(router.urls)),\n    path('branch-api/<slug:slug>/', BranchAPIDetailview.as_view()),\n    # path('branch-api/<int:id>/', BranchAPIDetailview.as_view()),\n    path('branch-api/', BranchAPIListview.as_view()),\n    path('room-api/', RoomAPIListview.as_view()),",
         "detail": "mainapp.urls",
         "documentation": {}
     },
@@ -1125,7 +1287,7 @@
         "kind": 5,
         "importPath": "mainapp.urls",
         "description": "mainapp.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', include(router.urls)),\n    # path('branch-api/<int:id>/', BranchAPIDetailview.as_view()),\n    path('branch-api/<slug:slug>/', BranchAPIDetailview.as_view()),\n    path('branch-api', BranchAPIListview.as_view()),\n    path('room-api/<slug:slug>/', RoomAPIDetailview.as_view()),\n    path('room-api', RoomAPIListview.as_view()),\n    path('group-api/<slug:slug>/', GroupAPIDetailview.as_view()),\n    path('group-api', GroupAPIListview.as_view()),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', include(router.urls)),\n    path('branch-api/<slug:slug>/', BranchAPIDetailview.as_view()),\n    # path('branch-api/<int:id>/', BranchAPIDetailview.as_view()),\n    path('branch-api/', BranchAPIListview.as_view()),\n    path('room-api/', RoomAPIListview.as_view()),\n    path('group-api/', GroupAPIListview.as_view()),\n]",
         "detail": "mainapp.urls",
         "documentation": {}
     },
@@ -1134,7 +1296,7 @@
         "kind": 6,
         "importPath": "mainapp.views",
         "description": "mainapp.views",
-        "peekOfCode": "class BranchViewset(viewsets.ModelViewSet):\n    queryset = Branch.objects.all()\n    serializer_class = BranchSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n    \"\"\" CRUD functions \"\"\"\n    def create(self, request, *args, **kwargs):\n        try:\n            data = request.data\n        except:",
+        "peekOfCode": "class BranchViewset(viewsets.ModelViewSet):\n    queryset = Branch.objects.all()\n    serializer_class = BranchSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n    filterset_fields = ['status','name', 'id']\n    \"\"\" CRUD functions \"\"\"\n    def create(self, request, *args, **kwargs):\n        try:\n            data = request.data",
         "detail": "mainapp.views",
         "documentation": {}
     },
@@ -1143,16 +1305,16 @@
         "kind": 6,
         "importPath": "mainapp.views",
         "description": "mainapp.views",
-        "peekOfCode": "class RoomViewset(viewsets.ModelViewSet):\n    queryset = Room.objects.all()\n    serializer_class = RoomSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n    def create(self, request, *args, **kwargs):\n        request_data = request.data\n        try:\n            branch = Branch.objects.get(id=request_data['branch'])\n        except:",
+        "peekOfCode": "class RoomViewset(viewsets.ModelViewSet):\n    queryset = Room.objects.all()\n    serializer_class = RoomSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n    def create(self, request, *args, **kwargs):\n        request_data = request.data\n        try:\n            branch = Branch.objects.get(id=int(request_data['branch']))\n        except:",
         "detail": "mainapp.views",
         "documentation": {}
     },
     {
-        "label": "GroupViewset",
+        "label": "Groupviewset",
         "kind": 6,
         "importPath": "mainapp.views",
         "description": "mainapp.views",
-        "peekOfCode": "class GroupViewset(viewsets.ModelViewSet):\n    queryset = Group.objects.all()\n    serializer_class = GroupSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n\"\"\" API for users \"\"\"\nclass BranchAPIListview(ListAPIView):\n    queryset = Branch.objects.filter(status=True)\n    serializer_class = BranchAPISerializer\n    permission_classes = [AllowAny]",
+        "peekOfCode": "class Groupviewset(viewsets.ModelViewSet):\n    queryset = Group.objects.all()\n    serializer_class = GroupSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n\"\"\" API \"\"\"\nclass BranchAPIListview(ListAPIView):\n    queryset = Branch.objects.filter(status=True)\n    serializer_class = BranchAPISerializer\n    permission_classes = [AllowAny]",
         "detail": "mainapp.views",
         "documentation": {}
     },
@@ -1161,7 +1323,7 @@
         "kind": 6,
         "importPath": "mainapp.views",
         "description": "mainapp.views",
-        "peekOfCode": "class BranchAPIListview(ListAPIView):\n    queryset = Branch.objects.filter(status=True)\n    serializer_class = BranchAPISerializer\n    permission_classes = [AllowAny]\nclass BranchAPIDetailview(RetrieveAPIView):\n    queryset = Branch.objects.filter(status=True)\n    serializer_class = BranchAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass RoomAPIListview(ListAPIView):",
+        "peekOfCode": "class BranchAPIListview(ListAPIView):\n    queryset = Branch.objects.filter(status=True)\n    serializer_class = BranchAPISerializer\n    permission_classes = [AllowAny]\nclass BranchAPIDetailview(RetrieveAPIView):\n    queryset = Branch.objects.filter(status=True)\n    serializer_class = BranchAPISerializer\n    permission_classes = [AllowAny] \n    lookup_field = 'slug'\n    # lookup_field = 'id'",
         "detail": "mainapp.views",
         "documentation": {}
     },
@@ -1170,7 +1332,7 @@
         "kind": 6,
         "importPath": "mainapp.views",
         "description": "mainapp.views",
-        "peekOfCode": "class BranchAPIDetailview(RetrieveAPIView):\n    queryset = Branch.objects.filter(status=True)\n    serializer_class = BranchAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass RoomAPIListview(ListAPIView):\n    queryset = Room.objects.filter(status=True)\n    serializer_class = RoomAPISerializer\n    permission_classes = [AllowAny]\nclass RoomAPIDetailview(RetrieveAPIView):",
+        "peekOfCode": "class BranchAPIDetailview(RetrieveAPIView):\n    queryset = Branch.objects.filter(status=True)\n    serializer_class = BranchAPISerializer\n    permission_classes = [AllowAny] \n    lookup_field = 'slug'\n    # lookup_field = 'id'\nclass RoomAPIListview(ListAPIView):\n    queryset = Room.objects.filter(status=True)\n    serializer_class = RoomAPISerializer\n    permission_classes = [AllowAny]",
         "detail": "mainapp.views",
         "documentation": {}
     },
@@ -1179,16 +1341,7 @@
         "kind": 6,
         "importPath": "mainapp.views",
         "description": "mainapp.views",
-        "peekOfCode": "class RoomAPIListview(ListAPIView):\n    queryset = Room.objects.filter(status=True)\n    serializer_class = RoomAPISerializer\n    permission_classes = [AllowAny]\nclass RoomAPIDetailview(RetrieveAPIView):\n    queryset = Room.objects.filter(status=True)\n    serializer_class = RoomAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass GroupAPIListview(ListAPIView):",
-        "detail": "mainapp.views",
-        "documentation": {}
-    },
-    {
-        "label": "RoomAPIDetailview",
-        "kind": 6,
-        "importPath": "mainapp.views",
-        "description": "mainapp.views",
-        "peekOfCode": "class RoomAPIDetailview(RetrieveAPIView):\n    queryset = Room.objects.filter(status=True)\n    serializer_class = RoomAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass GroupAPIListview(ListAPIView):\n    queryset = Group.objects.filter(status=True)\n    serializer_class = GroupAPISerializer\n    permission_classes = [AllowAny]\nclass GroupAPIDetailview(RetrieveAPIView):",
+        "peekOfCode": "class RoomAPIListview(ListAPIView):\n    queryset = Room.objects.filter(status=True)\n    serializer_class = RoomAPISerializer\n    permission_classes = [AllowAny]\nclass GroupAPIListview(ListAPIView):\n    queryset = Group.objects.filter(status=True)\n    serializer_class = GroupAPISerializer\n    permission_classes = [AllowAny]",
         "detail": "mainapp.views",
         "documentation": {}
     },
@@ -1197,16 +1350,7 @@
         "kind": 6,
         "importPath": "mainapp.views",
         "description": "mainapp.views",
-        "peekOfCode": "class GroupAPIListview(ListAPIView):\n    queryset = Group.objects.filter(status=True)\n    serializer_class = GroupAPISerializer\n    permission_classes = [AllowAny]\nclass GroupAPIDetailview(RetrieveAPIView):\n    queryset = Group.objects.filter(status=True)\n    serializer_class = GroupAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
-        "detail": "mainapp.views",
-        "documentation": {}
-    },
-    {
-        "label": "GroupAPIDetailview",
-        "kind": 6,
-        "importPath": "mainapp.views",
-        "description": "mainapp.views",
-        "peekOfCode": "class GroupAPIDetailview(RetrieveAPIView):\n    queryset = Group.objects.filter(status=True)\n    serializer_class = GroupAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
+        "peekOfCode": "class GroupAPIListview(ListAPIView):\n    queryset = Group.objects.filter(status=True)\n    serializer_class = GroupAPISerializer\n    permission_classes = [AllowAny]",
         "detail": "mainapp.views",
         "documentation": {}
     },
@@ -1217,15 +1361,6 @@
         "description": "userapp.migrations.0001_initial",
         "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = []\n    operations = [\n        migrations.CreateModel(\n            name=\"Field\",\n            fields=[\n                (\n                    \"id\",\n                    models.BigAutoField(",
         "detail": "userapp.migrations.0001_initial",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "userapp.migrations.0002_rename_diriction_worker_direction",
-        "description": "userapp.migrations.0002_rename_diriction_worker_direction",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('userapp', '0001_initial'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='worker',\n            old_name='diriction',\n            new_name='direction',\n        ),",
-        "detail": "userapp.migrations.0002_rename_diriction_worker_direction",
         "documentation": {}
     },
     {
@@ -1296,7 +1431,7 @@
         "kind": 6,
         "importPath": "userapp.models",
         "description": "userapp.models",
-        "peekOfCode": "class Worker(models.Model):\n    \"\"\" Worker - xodimlar uchun model \"\"\"\n    full_name = models.CharField(max_length=100, verbose_name=\"Ism familya\")\n    slug  = AutoSlugField(populate_from=\"full_name\", unique=True)\n    role = models.ForeignKey(Role, on_delete=models.CASCADE, verbose_name=\"Vazifasi\", related_name=\"workers\")\n    direction = models.ForeignKey(Field, on_delete=models.CASCADE, verbose_name=\"O'qtuvchining yo'nalishi\", related_name=\"workers\")\n    phone_number = models.CharField(max_length=12, validators=[_validate_phone], verbose_name=\"tel. raqam\", unique=True)\n    passport = models.CharField(max_length=15, verbose_name=\"Passport\", unique=True)\n    # percentage - ishchining maoshi foizga nisbatan hisoblansa\n    percentage = models.PositiveIntegerField(default=10, verbose_name=\"Ishchining foizi\", blank=True, null=True)",
+        "peekOfCode": "class Worker(models.Model):\n    \"\"\" Worker - xodimlar uchun model \"\"\"\n    full_name = models.CharField(max_length=100, verbose_name=\"Ism familya\")\n    slug  = AutoSlugField(populate_from=\"full_name\", unique=True)\n    role = models.ForeignKey(Role, on_delete=models.CASCADE, verbose_name=\"Vazifasi\", related_name=\"workers\")\n    diriction = models.ForeignKey(Field, on_delete=models.CASCADE, verbose_name=\"O'qtuvchining yo'nalishi\", related_name=\"workers\")\n    phone_number = models.CharField(max_length=12, validators=[_validate_phone], verbose_name=\"tel. raqam\", unique=True)\n    passport = models.CharField(max_length=15, verbose_name=\"Passport\", unique=True)\n    # percentage - ishchining maoshi foizga nisbatan hisoblansa\n    percentage = models.PositiveIntegerField(default=10, verbose_name=\"Ishchining foizi\", blank=True, null=True)",
         "detail": "userapp.models",
         "documentation": {}
     },
@@ -1337,11 +1472,11 @@
         "documentation": {}
     },
     {
-        "label": "WorkerSerializer",
+        "label": "FieldSerializer",
         "kind": 6,
         "importPath": "userapp.serializers",
         "description": "userapp.serializers",
-        "peekOfCode": "class WorkerSerializer(serializers.ModelSerializer):\n    class Meta:\n        model  = Worker\n        fields = ('__all__')\nclass RoleSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Role\n        fields = ('__all__')\nclass StudentSerializer(serializers.ModelSerializer):\n    field_name = serializers.CharField(source='field.name')",
+        "peekOfCode": "class FieldSerializer(ModelSerializer):\n    class Meta:\n        model = Field\n        fields = ('__all__')\nclass RoleSerializer(ModelSerializer):\n    class Meta:\n        model = Role\n        fields = ('__all__')\nclass WorkerSerializer(ModelSerializer):\n    class Meta:",
         "detail": "userapp.serializers",
         "documentation": {}
     },
@@ -1350,7 +1485,16 @@
         "kind": 6,
         "importPath": "userapp.serializers",
         "description": "userapp.serializers",
-        "peekOfCode": "class RoleSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Role\n        fields = ('__all__')\nclass StudentSerializer(serializers.ModelSerializer):\n    field_name = serializers.CharField(source='field.name')\n    class Meta:\n        model = Student\n        fields = ('__all__')\n        read_only_fields = (",
+        "peekOfCode": "class RoleSerializer(ModelSerializer):\n    class Meta:\n        model = Role\n        fields = ('__all__')\nclass WorkerSerializer(ModelSerializer):\n    class Meta:\n        model = Worker\n        fields = ('__all__')\nclass StudentSerializer(ModelSerializer):\n    class Meta:",
+        "detail": "userapp.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "WorkerSerializer",
+        "kind": 6,
+        "importPath": "userapp.serializers",
+        "description": "userapp.serializers",
+        "peekOfCode": "class WorkerSerializer(ModelSerializer):\n    class Meta:\n        model = Worker\n        fields = ('__all__')\nclass StudentSerializer(ModelSerializer):\n    class Meta:\n        model = Student\n        fields = ('__all__')\n\"\"\" API \"\"\"\nclass WorkerAPISerializer(ModelSerializer):",
         "detail": "userapp.serializers",
         "documentation": {}
     },
@@ -1359,16 +1503,7 @@
         "kind": 6,
         "importPath": "userapp.serializers",
         "description": "userapp.serializers",
-        "peekOfCode": "class StudentSerializer(serializers.ModelSerializer):\n    field_name = serializers.CharField(source='field.name')\n    class Meta:\n        model = Student\n        fields = ('__all__')\n        read_only_fields = (\n            'field_name',\n        )\nclass FieldSerializer(serializers.ModelSerializer):\n    class Meta:",
-        "detail": "userapp.serializers",
-        "documentation": {}
-    },
-    {
-        "label": "FieldSerializer",
-        "kind": 6,
-        "importPath": "userapp.serializers",
-        "description": "userapp.serializers",
-        "peekOfCode": "class FieldSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Field\n        fields = ('__all__')\n    \"\"\" API \"\"\"\nclass WorkerAPISerializer(serializers.ModelSerializer):\n    role_name = serializers.CharField(source='role.name')\n    direction_name = serializers.CharField(source='direction.name')\n    class Meta:\n        model = Worker",
+        "peekOfCode": "class StudentSerializer(ModelSerializer):\n    class Meta:\n        model = Student\n        fields = ('__all__')\n\"\"\" API \"\"\"\nclass WorkerAPISerializer(ModelSerializer):\n    direction_name = serializers.CharField(source='diriction.name')\n    direction_slug = serializers.CharField(source='diriction.slug')\n    role_name = serializers.CharField(source='role.name')\n    role_slug = serializers.CharField(source='role.slug')",
         "detail": "userapp.serializers",
         "documentation": {}
     },
@@ -1377,7 +1512,16 @@
         "kind": 6,
         "importPath": "userapp.serializers",
         "description": "userapp.serializers",
-        "peekOfCode": "class WorkerAPISerializer(serializers.ModelSerializer):\n    role_name = serializers.CharField(source='role.name')\n    direction_name = serializers.CharField(source='direction.name')\n    class Meta:\n        model = Worker\n        fields= ('id', 'full_name', 'phone_number', 'passport', 'percentage', 'salary', 'role_name', 'direction_name', 'slug')\nclass StudentAPISerializer(serializers.ModelSerializer):\n    field_name = serializers.CharField(source='field.name')\n    class Meta:\n        model = Student",
+        "peekOfCode": "class WorkerAPISerializer(ModelSerializer):\n    direction_name = serializers.CharField(source='diriction.name')\n    direction_slug = serializers.CharField(source='diriction.slug')\n    role_name = serializers.CharField(source='role.name')\n    role_slug = serializers.CharField(source='role.slug')\n    class Meta:\n        model = Worker\n        fields = ('id', 'full_name', 'slug', 'phone_number', 'passport', 'percentage', 'salary',\\\n                  'direction_name', 'direction_slug', 'role_name', 'role_slug')\nclass RoleAPISerializer(ModelSerializer):",
+        "detail": "userapp.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "RoleAPISerializer",
+        "kind": 6,
+        "importPath": "userapp.serializers",
+        "description": "userapp.serializers",
+        "peekOfCode": "class RoleAPISerializer(ModelSerializer):\n    workers = WorkerAPISerializer(many=True, read_only = True)\n    class Meta:\n        model = Role\n        fields = ('id', 'name', 'slug', 'workers')\nclass StudentAPISerializer(ModelSerializer):\n    field_name = serializers.CharField(source='field.name')\n    field_slug = serializers.CharField(source='field.slug')\n    class Meta:\n        model = Student",
         "detail": "userapp.serializers",
         "documentation": {}
     },
@@ -1386,7 +1530,16 @@
         "kind": 6,
         "importPath": "userapp.serializers",
         "description": "userapp.serializers",
-        "peekOfCode": "class StudentAPISerializer(serializers.ModelSerializer):\n    field_name = serializers.CharField(source='field.name')\n    class Meta:\n        model = Student\n        fields = ('id', 'slug', 'full_name', 'phone_number', 'passport', 'date_of_birth', 'father_name', 'father_phone', 'field_name', 'time', 'day')",
+        "peekOfCode": "class StudentAPISerializer(ModelSerializer):\n    field_name = serializers.CharField(source='field.name')\n    field_slug = serializers.CharField(source='field.slug')\n    class Meta:\n        model = Student\n        fields = ('id', 'full_name', 'slug', 'date_of_birth', 'passport', 'phone_number', 'father_name', \\\n                  'father_phone', 'field_name', 'field_slug', 'day', 'time')\nclass FieldAPISerializer(ModelSerializer):\n    students = StudentAPISerializer(many=True, read_only=True)\n    workers = WorkerAPISerializer(many=True, read_only=True)",
+        "detail": "userapp.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "FieldAPISerializer",
+        "kind": 6,
+        "importPath": "userapp.serializers",
+        "description": "userapp.serializers",
+        "peekOfCode": "class FieldAPISerializer(ModelSerializer):\n    students = StudentAPISerializer(many=True, read_only=True)\n    workers = WorkerAPISerializer(many=True, read_only=True)\n    class Meta:\n        model = Field\n        fields = ('id', 'name', 'slug', 'cost', 'duration', 'students', 'workers')",
         "detail": "userapp.serializers",
         "documentation": {}
     },
@@ -1395,7 +1548,7 @@
         "kind": 5,
         "importPath": "userapp.urls",
         "description": "userapp.urls",
-        "peekOfCode": "router = routers.DefaultRouter()\nrouter.register(r'worker', WorkerViewset, 'worker')\nrouter.register(r'field', FieldViewset, 'field')\nrouter.register(r'student', StudentViewset, 'student')\nrouter.register(r'role', RoleViewset, 'role')\nurlpatterns = [\n    path('', include(router.urls)),\n    path('worker-api/<slug:slug>', WorkerDetailview.as_view()),\n    path('worker-api', WorkerListview.as_view()),\n    path('student-api/<slug:slug>', StudentDetailview.as_view()),",
+        "peekOfCode": "router = DefaultRouter()\nrouter.register(r'field', FieldViewset)\nrouter.register(r'role', RoleViewset)\nrouter.register(r'worker', WorkerViewset)\nrouter.register(r'student', StudentViewset)\nrouter.register(r'field-api', FieldAPIViewset)\nrouter.register(r'role-api', RoleAPIViewset)\nrouter.register(r'worker-api', WorkerAPIViewset)\nrouter.register(r'student-api', StudentAPIViewset)\nurlpatterns = [",
         "detail": "userapp.urls",
         "documentation": {}
     },
@@ -1404,26 +1557,8 @@
         "kind": 5,
         "importPath": "userapp.urls",
         "description": "userapp.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', include(router.urls)),\n    path('worker-api/<slug:slug>', WorkerDetailview.as_view()),\n    path('worker-api', WorkerListview.as_view()),\n    path('student-api/<slug:slug>', StudentDetailview.as_view()),\n    path('student-api', StudentListview.as_view()),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', include(router.urls))\n]",
         "detail": "userapp.urls",
-        "documentation": {}
-    },
-    {
-        "label": "WorkerViewset",
-        "kind": 6,
-        "importPath": "userapp.views",
-        "description": "userapp.views",
-        "peekOfCode": "class WorkerViewset(viewsets.ModelViewSet):\n    queryset = Worker.objects.all()\n    serializer_class = WorkerSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n    def create(self, request, *args, **kwargs):\n        request_data = request.data\n        print(request_data)\n        try:\n            direction = Field.objects.get(id=request_data['direction'])",
-        "detail": "userapp.views",
-        "documentation": {}
-    },
-    {
-        "label": "StudentViewset",
-        "kind": 6,
-        "importPath": "userapp.views",
-        "description": "userapp.views",
-        "peekOfCode": "class StudentViewset(viewsets.ModelViewSet):\n    queryset = Student.objects.all()\n    serializer_class = StudentSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass FieldViewset(viewsets.ModelViewSet):\n    queryset = Field.objects.all()\n    serializer_class = FieldSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
-        "detail": "userapp.views",
         "documentation": {}
     },
     {
@@ -1431,7 +1566,7 @@
         "kind": 6,
         "importPath": "userapp.views",
         "description": "userapp.views",
-        "peekOfCode": "class FieldViewset(viewsets.ModelViewSet):\n    queryset = Field.objects.all()\n    serializer_class = FieldSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass RoleViewset(viewsets.ModelViewSet):\n    queryset = Role.objects.all()\n    serializer_class = RoleSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
+        "peekOfCode": "class FieldViewset(ModelViewSet):\n    queryset = Field.objects.all()\n    serializer_class = FieldSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass RoleViewset(ModelViewSet):\n    queryset = Role.objects.all()\n    serializer_class = RoleSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
         "detail": "userapp.views",
         "documentation": {}
     },
@@ -1440,43 +1575,61 @@
         "kind": 6,
         "importPath": "userapp.views",
         "description": "userapp.views",
-        "peekOfCode": "class RoleViewset(viewsets.ModelViewSet):\n    queryset = Role.objects.all()\n    serializer_class = RoleSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n\"\"\" API \"\"\"\nclass WorkerListview(ListAPIView):\n    queryset = Worker.objects.filter(status=True)\n    serializer_class = WorkerAPISerializer\n    permission_classes = [AllowAny]",
+        "peekOfCode": "class RoleViewset(ModelViewSet):\n    queryset = Role.objects.all()\n    serializer_class = RoleSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass WorkerViewset(ModelViewSet):\n    queryset = Worker.objects.all()\n    serializer_class = WorkerSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
         "detail": "userapp.views",
         "documentation": {}
     },
     {
-        "label": "WorkerListview",
+        "label": "WorkerViewset",
         "kind": 6,
         "importPath": "userapp.views",
         "description": "userapp.views",
-        "peekOfCode": "class WorkerListview(ListAPIView):\n    queryset = Worker.objects.filter(status=True)\n    serializer_class = WorkerAPISerializer\n    permission_classes = [AllowAny]\nclass WorkerDetailview(RetrieveAPIView):\n    queryset = Worker.objects.filter(status=True)\n    serializer_class = WorkerAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass StudentListview(ListAPIView):",
+        "peekOfCode": "class WorkerViewset(ModelViewSet):\n    queryset = Worker.objects.all()\n    serializer_class = WorkerSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass StudentViewset(ModelViewSet):\n    queryset = Student.objects.all()\n    serializer_class = StudentSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
         "detail": "userapp.views",
         "documentation": {}
     },
     {
-        "label": "WorkerDetailview",
+        "label": "StudentViewset",
         "kind": 6,
         "importPath": "userapp.views",
         "description": "userapp.views",
-        "peekOfCode": "class WorkerDetailview(RetrieveAPIView):\n    queryset = Worker.objects.filter(status=True)\n    serializer_class = WorkerAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass StudentListview(ListAPIView):\n    queryset = Student.objects.filter(status=True)\n    serializer_class = StudentAPISerializer\n    permission_classes = [AllowAny]\nclass StudentDetailview(RetrieveAPIView):",
+        "peekOfCode": "class StudentViewset(ModelViewSet):\n    queryset = Student.objects.all()\n    serializer_class = StudentSerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\n\"\"\" API \"\"\"\nclass FieldAPIViewset(ModelViewSet):\n    queryset = Field.objects.all()\n    serializer_class = FieldAPISerializer\n    permission_classes = [AllowAny]",
         "detail": "userapp.views",
         "documentation": {}
     },
     {
-        "label": "StudentListview",
+        "label": "FieldAPIViewset",
         "kind": 6,
         "importPath": "userapp.views",
         "description": "userapp.views",
-        "peekOfCode": "class StudentListview(ListAPIView):\n    queryset = Student.objects.filter(status=True)\n    serializer_class = StudentAPISerializer\n    permission_classes = [AllowAny]\nclass StudentDetailview(RetrieveAPIView):\n    queryset = Student.objects.filter(status=True)\n    serializer_class = StudentAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = ('slug')",
+        "peekOfCode": "class FieldAPIViewset(ModelViewSet):\n    queryset = Field.objects.all()\n    serializer_class = FieldAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass RoleAPIViewset(ModelViewSet):\n    queryset = Role.objects.all()\n    serializer_class = RoleAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
         "detail": "userapp.views",
         "documentation": {}
     },
     {
-        "label": "StudentDetailview",
+        "label": "RoleAPIViewset",
         "kind": 6,
         "importPath": "userapp.views",
         "description": "userapp.views",
-        "peekOfCode": "class StudentDetailview(RetrieveAPIView):\n    queryset = Student.objects.filter(status=True)\n    serializer_class = StudentAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = ('slug')",
+        "peekOfCode": "class RoleAPIViewset(ModelViewSet):\n    queryset = Role.objects.all()\n    serializer_class = RoleAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass WorkerAPIViewset(ModelViewSet):\n    queryset = Worker.objects.all()\n    serializer_class = WorkerAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
+        "detail": "userapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "WorkerAPIViewset",
+        "kind": 6,
+        "importPath": "userapp.views",
+        "description": "userapp.views",
+        "peekOfCode": "class WorkerAPIViewset(ModelViewSet):\n    queryset = Worker.objects.all()\n    serializer_class = WorkerAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'\nclass StudentAPIViewset(ModelViewSet):\n    queryset = Student.objects.all()\n    serializer_class = StudentAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
+        "detail": "userapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "StudentAPIViewset",
+        "kind": 6,
+        "importPath": "userapp.views",
+        "description": "userapp.views",
+        "peekOfCode": "class StudentAPIViewset(ModelViewSet):\n    queryset = Student.objects.all()\n    serializer_class = StudentAPISerializer\n    permission_classes = [AllowAny]\n    lookup_field = 'slug'",
         "detail": "userapp.views",
         "documentation": {}
     },

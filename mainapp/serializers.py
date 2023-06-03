@@ -1,6 +1,8 @@
 from rest_framework import serializers
 
 from .models import Branch, Room, Group
+from finance.serializers import ExpensesAPISerializer, PaymentAPISerializer,\
+    IncomeAPISerializer
 
 """ Admin panel uchun CRUD Serializers """
 class BranchSerializer(serializers.ModelSerializer):
@@ -18,26 +20,45 @@ class GroupSerializer(serializers.ModelSerializer):
         model = Group
         fields  =('__all__')
 
-class BranchAPISerializer(serializers.ModelSerializer):
+""" API """
+class GroupAPISerializer(serializers.ModelSerializer):
+    branch_name = serializers.CharField(source='branch.name')
+    branch_slug = serializers.CharField(source='branch.slug')
+    field_name = serializers.CharField(source='field.name')
+    field_slug = serializers.CharField(source='field.slug')
+    room_number = serializers.IntegerField(source='room.number')
+    room_slug = serializers.CharField(source='room.slug')
+    teacher_name = serializers.CharField(source='teacher.full_name')
+    teacher_slug = serializers.CharField(source='teacher.slug')
+    payments = PaymentAPISerializer(many=True, read_only=True)
     class Meta:
-        model = Branch
-        fields = ('id', 'name', 'adress', 'slug')
+        model = Group
+        fields = ('id',  'name', 'day', 'time',\
+                  'branch', 'branch_name', 'branch_slug',\
+                  'field', 'field_name', 'field_slug',\
+                  'room', 'room_number', 'room_slug', 
+                  'teacher', 'teacher_name', 'teacher_slug',
+                  'payments',
+                  )
 
 class RoomAPISerializer(serializers.ModelSerializer):
     branch_name = serializers.CharField(source='branch.name')
-    # branch_adress = serializers.CharField(source='branch.adress')
-    # branch_status = serializers.BooleanField(source='branch.status')
-    # branch_created_at = serializers.DateTimeField(source='branch.created_at')
+    groups  = GroupAPISerializer(many=True, read_only=True)
     class Meta:
         model = Room
-        fields = ('id', 'number', 'capacity', 'branch_name', 'slug')
-
-class GroupAPISerializer(serializers.ModelSerializer):
-    branch_name = serializers.CharField(source='branch.name')
-    field_name = serializers.CharField(source='field.name')
-    teacher_name = serializers.CharField(source='teacher.full_name')
-    room = serializers.IntegerField(source='room.number')
-
+        fields = ('id', 'number', 'capacity', 'branch_name', 'groups')
+    
+class BranchAPISerializer(serializers.ModelSerializer):
+    groups = GroupAPISerializer(many=True, read_only=True)
+    rooms = RoomAPISerializer(many=True, read_only=True)
+    expenses = ExpensesAPISerializer(many=True, read_only=True)
+    incoms = IncomeAPISerializer(many=True, read_only=True)
+    payments = PaymentAPISerializer(many=True, read_only=True)
     class Meta:
-        model = Group
-        fields = ('id', 'branch_name', 'field_name', 'name', 'room', 'teacher_name', 'day', 'time', 'slug')
+        model = Branch
+        fields = ('id','name','slug','adress','groups','rooms',
+                  'expenses','incoms','payments')
+        
+
+
+

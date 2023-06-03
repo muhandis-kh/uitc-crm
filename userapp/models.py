@@ -39,7 +39,6 @@ class Field(models.Model):
     def __str__(self):
         return self.name
 
-
 class Role(models.Model):
     """ Role - xodimlarning vazifasini yaratuvchi model """
     name = models.CharField(max_length=50, verbose_name="Vazifasi nomi")
@@ -56,7 +55,7 @@ class Worker(models.Model):
     full_name = models.CharField(max_length=100, verbose_name="Ism familya")
     slug  = AutoSlugField(populate_from="full_name", unique=True)
     role = models.ForeignKey(Role, on_delete=models.CASCADE, verbose_name="Vazifasi", related_name="workers")
-    direction = models.ForeignKey(Field, on_delete=models.CASCADE, verbose_name="O'qtuvchining yo'nalishi", related_name="workers")
+    diriction = models.ForeignKey(Field, on_delete=models.CASCADE, verbose_name="O'qtuvchining yo'nalishi", related_name="workers")
     phone_number = models.CharField(max_length=12, validators=[_validate_phone], verbose_name="tel. raqam", unique=True)
     passport = models.CharField(max_length=15, verbose_name="Passport", unique=True)
     # percentage - ishchining maoshi foizga nisbatan hisoblansa
